@@ -290,3 +290,4 @@ Received Import Request.
 Start importing Assets/Prefabs/BenchPrefab.prefab using Guid(0a4166e977f4ed245bd0c911be95c5d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ba4dde1b8a85eb543e80b19ad5f0c31') in 0.014686 seconds 
   Import took 0.020990 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
