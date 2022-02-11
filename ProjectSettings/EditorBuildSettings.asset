@@ -5,12 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/Environment.unity
     guid: 8943a7782beaf434882ac688776f74d7
+  - enabled: 1
+    path: Assets/Scenes/Kadin Scene.unity
+    guid: 8a0622d35c6ac0b48ac5bea7ad8698e1
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9d3e8edb05abc3b4780e219fcefb8bb8, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 9f9c0310c5d1d1242807194e6ab8658e, type: 2}
