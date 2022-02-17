@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   distancetoPlayer: 2
-  targetPos: {fileID: 0}
+  targetPos: {fileID: 388821129436613895}
   spores: {fileID: 7539852769883062634, guid: eee4148bd4d65d44a86152d7e1d7a6d4, type: 3}
   maxSpores: 2
 --- !u!1 &7159724717841988817
