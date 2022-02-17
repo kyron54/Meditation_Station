@@ -4,23 +4,49 @@ using UnityEngine;
 
 public class BoatActBehaviour : MonoBehaviour
 {
+    public GameObject[] waypoints;
+    int currentWaypoint = 0;
+    public float waypointRadius;
+
     public float Speed = 3;
+
+    private bool stopMovement;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        stopMovement = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+      
+       
     }
 
     public void Movement()
     {
-        transform.Translate(Vector3.right * Speed * Time.deltaTime);
+        if(Vector3.Distance(waypoints[currentWaypoint].transform.position, transform.position)
+            < waypointRadius)
+        {
+            currentWaypoint++;
+            if(currentWaypoint >= waypoints.Length)
+            {
+                currentWaypoint = 0;
+            }
+        }
+
+        transform.position = Vector3.MoveTowards(transform.position,
+              waypoints[currentWaypoint].transform.position, Time.deltaTime
+              * Speed);
+        if(transform.position == waypoints[4].transform.position)
+        {
+            transform.position = waypoints[4].transform.position;
+        }
+        Debug.Log("isRunning");
+
+        //transform.Translate(Vector3.right * Speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -30,9 +56,18 @@ public class BoatActBehaviour : MonoBehaviour
 
     private void OnCollisionStay(Collision collision)
     {
-        if (collision.gameObject.name.Contains("water"))
+        if (collision.gameObject.name.Contains("water")
+            && !stopMovement)
         {
             Movement();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "Last Point")
+        {
+            stopMovement = true;
         }
     }
 }
