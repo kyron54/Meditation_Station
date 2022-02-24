@@ -5,6 +5,8 @@ using UnityEngine;
 public class FoodBehaviour : MonoBehaviour
 {
     private Rigidbody rb;
+
+    public float force = 500;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,9 +26,21 @@ public class FoodBehaviour : MonoBehaviour
             rb.useGravity = true;
         }
 
-        if(collision.gameObject.name == "Animal Mouth")
+       /* if(collision.gameObject.name == "Animal Mouth")
         {
             Destroy(gameObject);
+        }
+
+        */
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Hand"))
+        {
+
+
+            rb.AddForce(Vector3.down * force);
         }
     }
 }

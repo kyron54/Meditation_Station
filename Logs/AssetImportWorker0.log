@@ -15,12 +15,12 @@ C:/Users/kadin/OneDrive/Desktop/MedStation/Meditation-Station-GitHubVersion/Medi
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60641
+55656
 Successfully changed project path to: C:/Users/kadin/OneDrive/Desktop/MedStation/Meditation-Station-GitHubVersion/Meditation_Station_GHV
 C:/Users/kadin/OneDrive/Desktop/MedStation/Meditation-Station-GitHubVersion/Meditation_Station_GHV
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 130.42 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 1.20 ms.
+Refreshing native plugins compatible for Editor in 88.18 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.97 ms.
 Initialize engine version: 2020.3.26f1 (7298b473bc1a)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path C:/Users/kadin/OneDrive/Desktop/MedStation/Meditation-Station-GitHubVersion/Meditation_Station_GHV/Assets
@@ -36,98 +36,98 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56512
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003271 seconds.
+Registered in 0.002105 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 114.45 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.16 ms.
+Refreshing native plugins compatible for Editor in 68.31 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.857 seconds
+- Completed reload, in  0.498 seconds
 Domain Reload Profiling:
-	ReloadAssembly (858ms)
-		BeginReloadAssembly (71ms)
+	ReloadAssembly (498ms)
+		BeginReloadAssembly (42ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (689ms)
-			LoadAssemblies (68ms)
+		EndReloadAssembly (398ms)
+			LoadAssemblies (41ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (202ms)
+			SetupTypeCache (119ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (41ms)
-			SetupLoadedEditorAssemblies (289ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (174ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (115ms)
-				BeforeProcessingInitializeOnLoad (22ms)
-				ProcessInitializeOnLoadAttributes (109ms)
-				ProcessInitializeOnLoadMethodAttributes (37ms)
+				RefreshPlugins (68ms)
+				BeforeProcessingInitializeOnLoad (13ms)
+				ProcessInitializeOnLoadAttributes (66ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.007651 seconds.
+Registered in 0.004485 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 118.92 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 74.57 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 [XR] OculusXRPlugin: registering subsystems
 [XR] Unable to register display lifecyle provider: [1]
 [XR] Oculus Input lifecycle provider registered.
 [XR] Unable to register input lifecyle provider: [1]
 [XR] OVRP version 1.67.0
 Mono: successfully reloaded assembly
-- Completed reload, in  1.805 seconds
+- Completed reload, in  1.095 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1806ms)
-		BeginReloadAssembly (201ms)
+	ReloadAssembly (1096ms)
+		BeginReloadAssembly (125ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (23ms)
-		EndReloadAssembly (1520ms)
-			LoadAssemblies (138ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (920ms)
+			LoadAssemblies (80ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (467ms)
+			SetupTypeCache (295ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (82ms)
-			SetupLoadedEditorAssemblies (648ms)
+			RebuildScriptCaches (54ms)
+			SetupLoadedEditorAssemblies (370ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (119ms)
-				BeforeProcessingInitializeOnLoad (156ms)
-				ProcessInitializeOnLoadAttributes (336ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				RefreshPlugins (75ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (179ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 1.18 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
-Unloading 3790 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 182.2 MB.
-System memory in use after: 182.4 MB.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Unloading 3792 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 182.1 MB.
+System memory in use after: 182.3 MB.
 
-Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 4219.
-Total: 4.526200 ms (FindLiveObjects: 0.346700 ms CreateObjectMapping: 0.230800 ms MarkObjects: 3.850900 ms  DeleteObjects: 0.096600 ms)
+Unloading 44 unused Assets to reduce memory usage. Loaded Objects now: 4221.
+Total: 3.047900 ms (FindLiveObjects: 0.400300 ms CreateObjectMapping: 0.238900 ms MarkObjects: 2.341000 ms  DeleteObjects: 0.067100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -140,444 +140,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
-Received Import Request.
-  path: Assets/Scenes/Kadin Scene/Lightmap-1_comp_dir.png
-  artifactKey: Guid(3224be31e9dc05d4b975a3f01604ad3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-1_comp_dir.png using Guid(3224be31e9dc05d4b975a3f01604ad3a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bee6e3f1d5782788168ace1f9465b8c9') in 0.103903 seconds 
-  Import took 0.111203 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-13_comp_shadowmask.png
-  artifactKey: Guid(7f37e0c806e30f64899654abcf6dd8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-13_comp_shadowmask.png using Guid(7f37e0c806e30f64899654abcf6dd8ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ef8f1aa91bafecbdc1d28d305f645df') in 0.023230 seconds 
-  Import took 0.030156 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000354 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-1_comp_light.exr
-  artifactKey: Guid(53a5923b44ae18742b30d403061d5383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-1_comp_light.exr using Guid(53a5923b44ae18742b30d403061d5383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f21a04d2a34271d93d85318ed1b49ae7') in 0.081296 seconds 
-  Import took 0.090678 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000456 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-3_comp_dir.png
-  artifactKey: Guid(ccca78406196b59449cd7535d0c439e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-3_comp_dir.png using Guid(ccca78406196b59449cd7535d0c439e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b844e783921196ca359168d7e55b3c4') in 0.031441 seconds 
-  Import took 0.043400 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000502 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-0_comp_shadowmask.png
-  artifactKey: Guid(46ebc315da171934fa3dc019ae971c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-0_comp_shadowmask.png using Guid(46ebc315da171934fa3dc019ae971c85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe707994d3dd743f256e36eab44dddea') in 0.022434 seconds 
-  Import took 0.031903 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Scenes/Kadin Scene
-  artifactKey: Guid(1bca6808bca50444c9d53211247895e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene using Guid(1bca6808bca50444c9d53211247895e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '654dba255c8964e2ca85146fae3caf3e') in 0.008443 seconds 
-  Import took 0.015598 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000265 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-8_comp_dir.png
-  artifactKey: Guid(abf3f3c7debd002419b06b92f2a344c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-8_comp_dir.png using Guid(abf3f3c7debd002419b06b92f2a344c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24c615c6ae7ac91372d159a8c4a8ef49') in 0.017475 seconds 
-  Import took 0.024296 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000242 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-4_comp_light.exr
-  artifactKey: Guid(ee4dfa2fba198ef4e8d75de3fb844f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-4_comp_light.exr using Guid(ee4dfa2fba198ef4e8d75de3fb844f80) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61812144b60e5a9708bcf6f17b1f661c') in 0.016831 seconds 
-  Import took 0.024141 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000262 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-6_comp_dir.png
-  artifactKey: Guid(5eddeee0aad5b504996b6bf8dcba826f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-6_comp_dir.png using Guid(5eddeee0aad5b504996b6bf8dcba826f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c10610ff03e217ea22e7d00f2e44c7a') in 0.018364 seconds 
-  Import took 0.025308 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000415 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-12_comp_dir.png
-  artifactKey: Guid(5dc254b7cee69844fba21e566d004717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-12_comp_dir.png using Guid(5dc254b7cee69844fba21e566d004717) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd6864a12f5df0ed7a9bd3979b570af0') in 0.018764 seconds 
-  Import took 0.025751 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-14_comp_dir.png
-  artifactKey: Guid(d12230d77bb7d1f4a9033cd650b1bb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-14_comp_dir.png using Guid(d12230d77bb7d1f4a9033cd650b1bb24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df1a1051a0377b93554b5430fb85a5d7') in 0.017636 seconds 
-  Import took 0.024573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-8_comp_light.exr
-  artifactKey: Guid(f60ab7bc2eb7100478254f8755e24389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-8_comp_light.exr using Guid(f60ab7bc2eb7100478254f8755e24389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30c555c24d817cef75dc1810be96a48d') in 0.017873 seconds 
-  Import took 0.025008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000332 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-0_comp_dir.png
-  artifactKey: Guid(e664a7c206fa5474e8f4683c754735e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-0_comp_dir.png using Guid(e664a7c206fa5474e8f4683c754735e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ed484f6f1981fcc273350b7e88c4052') in 0.016709 seconds 
-  Import took 0.023665 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-2_comp_light.exr
-  artifactKey: Guid(7d32f96bbf8a0cb42bddeff9719cf9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-2_comp_light.exr using Guid(7d32f96bbf8a0cb42bddeff9719cf9e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbfa4289a360a477da5c6dddc06dde0f') in 0.018545 seconds 
-  Import took 0.025714 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000283 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-0_comp_light.exr
-  artifactKey: Guid(4c71e4f5b0a81fd4f9d2f891213818d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-0_comp_light.exr using Guid(4c71e4f5b0a81fd4f9d2f891213818d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f964264bb3e1fe63828e43fabeabc7f8') in 0.018421 seconds 
-  Import took 0.025567 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-12_comp_shadowmask.png
-  artifactKey: Guid(32cc827fb9d62644fa250a866c837097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-12_comp_shadowmask.png using Guid(32cc827fb9d62644fa250a866c837097) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b9df3e75fa00f869cfcf3b2c0ebd49f') in 0.018923 seconds 
-  Import took 0.025981 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-11_comp_light.exr
-  artifactKey: Guid(1d6516627b737d24ca687bd241594334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-11_comp_light.exr using Guid(1d6516627b737d24ca687bd241594334) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477e14fca712f8deaf3eecec65dc5218') in 0.018305 seconds 
-  Import took 0.025165 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-4_comp_dir.png
-  artifactKey: Guid(0f1392fdd969220458cc8055cd6c0f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-4_comp_dir.png using Guid(0f1392fdd969220458cc8055cd6c0f9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093c10c1a785499ac31f4576c4858d54') in 0.017341 seconds 
-  Import took 0.024427 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-2_comp_dir.png
-  artifactKey: Guid(b16faaa58875ddc4bae8806ef4c26a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-2_comp_dir.png using Guid(b16faaa58875ddc4bae8806ef4c26a68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e617392fb09c94055dc70cca3e3b4d8a') in 0.019460 seconds 
-  Import took 0.027026 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-7_comp_shadowmask.png
-  artifactKey: Guid(d8f78e1e416f7a44ea9a1aaf95c8d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-7_comp_shadowmask.png using Guid(d8f78e1e416f7a44ea9a1aaf95c8d47d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16a4081f231d4fb02d9f547317a3fcab') in 0.015428 seconds 
-  Import took 0.022481 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-6_comp_shadowmask.png
-  artifactKey: Guid(b8051260ef34f3043bf76b0d6ebb7c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-6_comp_shadowmask.png using Guid(b8051260ef34f3043bf76b0d6ebb7c71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c58ac9adb117276192f387d8a6e6a0d0') in 0.015124 seconds 
-  Import took 0.022088 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000389 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-14_comp_light.exr
-  artifactKey: Guid(4e1cbd07d4b1c544a8ceeded8b933d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-14_comp_light.exr using Guid(4e1cbd07d4b1c544a8ceeded8b933d06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12393d0d4d0b01dff541e71fc616fb04') in 0.017387 seconds 
-  Import took 0.024801 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-9_comp_dir.png
-  artifactKey: Guid(d75d2c869b5fdce45bec24b670882242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-9_comp_dir.png using Guid(d75d2c869b5fdce45bec24b670882242) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b554e55861cb1902b0e5d493a56c8e81') in 0.020066 seconds 
-  Import took 0.027074 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-5_comp_dir.png
-  artifactKey: Guid(5987325b9891a3c4b8effde2030621f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-5_comp_dir.png using Guid(5987325b9891a3c4b8effde2030621f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa8f488cd2b7fe794be47acb6afb3b85') in 0.017732 seconds 
-  Import took 0.024950 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-7_comp_light.exr
-  artifactKey: Guid(167592f979067e9479b39662494053c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-7_comp_light.exr using Guid(167592f979067e9479b39662494053c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b416f301a5ffd4392398154492e96c74') in 0.018012 seconds 
-  Import took 0.024961 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000334 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-11_comp_shadowmask.png
-  artifactKey: Guid(d99a58b09cf4f82488e85eda9cf6ee70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-11_comp_shadowmask.png using Guid(d99a58b09cf4f82488e85eda9cf6ee70) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52dc1d745c12572cc23cff6e60180bd0') in 0.016316 seconds 
-  Import took 0.023689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-12_comp_light.exr
-  artifactKey: Guid(3077b85b466907749b938675269c305f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-12_comp_light.exr using Guid(3077b85b466907749b938675269c305f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bf0eb36e8d7d1432a0f36d3a7753b48') in 0.017217 seconds 
-  Import took 0.024499 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-2_comp_shadowmask.png
-  artifactKey: Guid(9fefad8d0b2803442b4619566a1d8f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-2_comp_shadowmask.png using Guid(9fefad8d0b2803442b4619566a1d8f8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72411bda2a379e1f6cf2e79853ac9ee') in 0.015129 seconds 
-  Import took 0.022458 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000286 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-7_comp_dir.png
-  artifactKey: Guid(671b5383bae669241aee7a4e5fa20321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-7_comp_dir.png using Guid(671b5383bae669241aee7a4e5fa20321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25366827239e16220a048bfe881c2533') in 0.018175 seconds 
-  Import took 0.025385 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-5_comp_light.exr
-  artifactKey: Guid(d7a4f93522d97084f982719e6cfc5b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-5_comp_light.exr using Guid(d7a4f93522d97084f982719e6cfc5b75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc24a974150befde36c97c191e4c2080') in 0.018594 seconds 
-  Import took 0.025566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000319 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-9_comp_shadowmask.png
-  artifactKey: Guid(f9c4c53d871cd3a4bbd0d19cb1b6da46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-9_comp_shadowmask.png using Guid(f9c4c53d871cd3a4bbd0d19cb1b6da46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c0e2716e4236aa0bfe09dbd1d483cdb') in 0.015062 seconds 
-  Import took 0.022038 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-8_comp_shadowmask.png
-  artifactKey: Guid(1971f2907117bff46a1ef15c22b38304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-8_comp_shadowmask.png using Guid(1971f2907117bff46a1ef15c22b38304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14929dae6cdc56fe6ca83f6b61c47d03') in 0.015116 seconds 
-  Import took 0.022635 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000331 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-9_comp_light.exr
-  artifactKey: Guid(37ba3b5d544c2554b9b426bf6e432f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-9_comp_light.exr using Guid(37ba3b5d544c2554b9b426bf6e432f9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea47239ceb49372e7a45d7e5c7f5315b') in 0.018176 seconds 
-  Import took 0.025210 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-13_comp_light.exr
-  artifactKey: Guid(ea0e52a0b3329f6419502b4111f91c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-13_comp_light.exr using Guid(ea0e52a0b3329f6419502b4111f91c45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6ffece1db4a5587aa2419f1f2205277') in 0.016975 seconds 
-  Import took 0.024093 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000326 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-10_comp_dir.png
-  artifactKey: Guid(f89701d7d3b3bc34b8a2a0b5808f6948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-10_comp_dir.png using Guid(f89701d7d3b3bc34b8a2a0b5808f6948) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63be203726dcfeb5eec6a0f91ef1f123') in 0.017824 seconds 
-  Import took 0.024928 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-6_comp_light.exr
-  artifactKey: Guid(5dbdb66d915432245a499138f5ccbe93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-6_comp_light.exr using Guid(5dbdb66d915432245a499138f5ccbe93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd07a6abafc138aacd14fe415c2de32b1') in 0.019061 seconds 
-  Import took 0.026127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-3_comp_shadowmask.png
-  artifactKey: Guid(ffe688f0143c5084d93d4429de340e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-3_comp_shadowmask.png using Guid(ffe688f0143c5084d93d4429de340e9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '067742fb63c8a6ff1965026b8c6d4733') in 0.017694 seconds 
-  Import took 0.024622 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000321 seconds.
-  path: Assets/Scenes/Kadin Scene/LightingData.asset
-  artifactKey: Guid(8178bec5389c02e468e920cf9f5593d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/LightingData.asset using Guid(8178bec5389c02e468e920cf9f5593d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c08a3054edb01871c7b36e7724fbd0f') in 0.011335 seconds 
-  Import took 0.018292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-11_comp_dir.png
-  artifactKey: Guid(8384a173d1675d741bc6e4f613a4b5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-11_comp_dir.png using Guid(8384a173d1675d741bc6e4f613a4b5c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f48103ef87f0ee2c078bcdb504631f4a') in 0.025796 seconds 
-  Import took 0.033376 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000360 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-1_comp_shadowmask.png
-  artifactKey: Guid(40a8144e43053fd428a45f4a711097ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-1_comp_shadowmask.png using Guid(40a8144e43053fd428a45f4a711097ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c13cddf6279c1f983fcf436668aa46d') in 0.017851 seconds 
-  Import took 0.025753 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-10_comp_light.exr
-  artifactKey: Guid(8466327f7c5ada8469bccd004fb36d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-10_comp_light.exr using Guid(8466327f7c5ada8469bccd004fb36d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3cd4976aff33b11501c1c98ed8484b') in 0.018840 seconds 
-  Import took 0.026729 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000362 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-3_comp_light.exr
-  artifactKey: Guid(96600e24c4e6a364b9b2a93dbd8bfc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-3_comp_light.exr using Guid(96600e24c4e6a364b9b2a93dbd8bfc50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bd429cf602cb62b21d197bd34afa3b4') in 0.018702 seconds 
-  Import took 0.026189 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000311 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-5_comp_shadowmask.png
-  artifactKey: Guid(e5e86aba4ee5832488aacb90720e8e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-5_comp_shadowmask.png using Guid(e5e86aba4ee5832488aacb90720e8e48) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1b0f33d7cb9e3fdc550cb1d483611ca') in 0.015592 seconds 
-  Import took 0.022440 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000327 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-10_comp_shadowmask.png
-  artifactKey: Guid(e5b9e0cfc23e473409303c0439e6773b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-10_comp_shadowmask.png using Guid(e5b9e0cfc23e473409303c0439e6773b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c28785b85b7310a41fa51e476ad80f53') in 0.015161 seconds 
-  Import took 0.022313 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-13_comp_dir.png
-  artifactKey: Guid(b21234442c923ad45a83cd90dcbe3f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-13_comp_dir.png using Guid(b21234442c923ad45a83cd90dcbe3f25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2268eaec43ba2458eab9d23ba02acc0') in 0.017655 seconds 
-  Import took 0.024576 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000308 seconds.
-  path: Assets/Scenes/Kadin Scene/Lightmap-4_comp_shadowmask.png
-  artifactKey: Guid(c1eef526255fd414dbd7f0c236004fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Kadin Scene/Lightmap-4_comp_shadowmask.png using Guid(c1eef526255fd414dbd7f0c236004fba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1934500a1793a582260012d1f7466fc') in 0.015739 seconds 
-  Import took 0.023262 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.610895 seconds.
-  path: Assets/Scenes/Environment/OcclusionCullingData.asset
-  artifactKey: Guid(cfa0eb778e68d8543ab5dabcb953d996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Environment/OcclusionCullingData.asset using Guid(cfa0eb778e68d8543ab5dabcb953d996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d4cf3cfd36951d0c7b98fdf871528e3') in 0.025429 seconds 
-  Import took 0.035845 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.050377 seconds.
-  path: Assets/Scenes/Environment
-  artifactKey: Guid(8eb9ced5b37dc6542a67f3dadafcece9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Environment using Guid(8eb9ced5b37dc6542a67f3dadafcece9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fb29b5c3fbe5469eb5788d18cdb4ec3') in 0.019513 seconds 
-  Import took 0.037478 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 53.553164 seconds.
-  path: Assets/Scripts/FoodBehaviour.cs
-  artifactKey: Guid(dea35ecd7e34dc444b5d1be28562cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FoodBehaviour.cs using Guid(dea35ecd7e34dc444b5d1be28562cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44966482205d9fb4f6ac5c2282d266ce') in 0.057939 seconds 
-  Import took 0.065740 seconds .
-
-========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007512 seconds.
+Registered in 0.004378 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.26 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.09 ms.
+Refreshing native plugins compatible for Editor in 1.32 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.598 seconds
+- Completed reload, in  0.959 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1599ms)
-		BeginReloadAssembly (159ms)
+	ReloadAssembly (960ms)
+		BeginReloadAssembly (108ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (53ms)
-		EndReloadAssembly (1351ms)
-			LoadAssemblies (132ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (803ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (483ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (480ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (284ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (151ms)
-				ProcessInitializeOnLoadAttributes (296ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (176ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (13ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.25 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
-Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.3 MB.
-System memory in use after: 171.5 MB.
+Refreshing native plugins compatible for Editor in 0.93 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.3 MB.
+System memory in use after: 168.5 MB.
 
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4228.
-Total: 4.614400 ms (FindLiveObjects: 0.362300 ms CreateObjectMapping: 0.256500 ms MarkObjects: 3.940200 ms  DeleteObjects: 0.054100 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4224.
+Total: 2.988900 ms (FindLiveObjects: 0.370200 ms CreateObjectMapping: 0.200900 ms MarkObjects: 2.380400 ms  DeleteObjects: 0.036700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -592,60 +201,335 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 232.525349 seconds.
   path: Assets/Scripts/FoodBehaviour.cs
   artifactKey: Guid(dea35ecd7e34dc444b5d1be28562cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/FoodBehaviour.cs using Guid(dea35ecd7e34dc444b5d1be28562cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f4210cae87ae443db953848d9f1103') in 0.010795 seconds 
-  Import took 0.019023 seconds .
+Start importing Assets/Scripts/FoodBehaviour.cs using Guid(dea35ecd7e34dc444b5d1be28562cce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'def9fddb25f7f5aacf5feb1cec5009a7') in 0.052443 seconds 
+  Import took 0.057182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.307549 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef64950c780d8d2904d48bb30552e6c') in 0.022214 seconds 
+  Import took 0.027571 seconds .
 
 ========================================================================
 Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 8.61 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 37 unused Assets to reduce memory usage. Loaded Objects now: 4224.
+Total: 3.660900 ms (FindLiveObjects: 0.259600 ms CreateObjectMapping: 0.156300 ms MarkObjects: 3.135000 ms  DeleteObjects: 0.109200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 8.60 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4224.
+Total: 3.677000 ms (FindLiveObjects: 0.262000 ms CreateObjectMapping: 0.180000 ms MarkObjects: 3.197200 ms  DeleteObjects: 0.037000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.007274 seconds.
+Registered in 0.005035 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
-Refreshing native plugins compatible for Editor in 1.34 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.10 ms.
+Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.542 seconds
+- Completed reload, in  0.940 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1542ms)
-		BeginReloadAssembly (145ms)
+	ReloadAssembly (940ms)
+		BeginReloadAssembly (93ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (43ms)
-		EndReloadAssembly (1310ms)
-			LoadAssemblies (133ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (798ms)
+			LoadAssemblies (78ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (464ms)
+			SetupTypeCache (277ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (60ms)
-			SetupLoadedEditorAssemblies (465ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (298ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (146ms)
-				ProcessInitializeOnLoadAttributes (285ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (87ms)
+				ProcessInitializeOnLoadAttributes (188ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
 Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
-Refreshing native plugins compatible for Editor in 1.68 ms, found 6 plugins.
-Preloading 1 native plugins for Editor in 0.12 ms.
-Unloading 3614 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 171.4 MB.
-System memory in use after: 171.6 MB.
+Refreshing native plugins compatible for Editor in 0.88 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.4 MB.
+System memory in use after: 168.6 MB.
 
-Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4231.
-Total: 5.543000 ms (FindLiveObjects: 0.403900 ms CreateObjectMapping: 0.299900 ms MarkObjects: 4.772900 ms  DeleteObjects: 0.064800 ms)
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4227.
+Total: 3.218000 ms (FindLiveObjects: 0.527600 ms CreateObjectMapping: 0.293300 ms MarkObjects: 2.326100 ms  DeleteObjects: 0.070400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 9.41 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.05 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.2 MB.
+System memory in use after: 97.4 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4227.
+Total: 2.962400 ms (FindLiveObjects: 0.263100 ms CreateObjectMapping: 0.183200 ms MarkObjects: 2.463400 ms  DeleteObjects: 0.052000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004376 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.928 seconds
+Domain Reload Profiling:
+	ReloadAssembly (929ms)
+		BeginReloadAssembly (98ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (29ms)
+		EndReloadAssembly (779ms)
+			LoadAssemblies (80ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (269ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (168ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.4 MB.
+System memory in use after: 168.6 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4230.
+Total: 2.746700 ms (FindLiveObjects: 0.246400 ms CreateObjectMapping: 0.145900 ms MarkObjects: 2.317800 ms  DeleteObjects: 0.036000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004063 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.951 seconds
+Domain Reload Profiling:
+	ReloadAssembly (951ms)
+		BeginReloadAssembly (123ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (34ms)
+		EndReloadAssembly (775ms)
+			LoadAssemblies (76ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (36ms)
+			SetupLoadedEditorAssemblies (279ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (174ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.4 MB.
+System memory in use after: 168.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4233.
+Total: 2.896500 ms (FindLiveObjects: 0.251300 ms CreateObjectMapping: 0.151500 ms MarkObjects: 2.458900 ms  DeleteObjects: 0.034100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 8.89 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 97.3 MB.
+System memory in use after: 97.5 MB.
+
+Unloading 36 unused Assets to reduce memory usage. Loaded Objects now: 4233.
+Total: 2.864900 ms (FindLiveObjects: 0.256500 ms CreateObjectMapping: 0.191800 ms MarkObjects: 2.381600 ms  DeleteObjects: 0.034400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005881 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.921 seconds
+Domain Reload Profiling:
+	ReloadAssembly (921ms)
+		BeginReloadAssembly (97ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (27ms)
+		EndReloadAssembly (773ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (35ms)
+			SetupLoadedEditorAssemblies (265ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (85ms)
+				ProcessInitializeOnLoadAttributes (161ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(524294) extendedPlatform(0)
+Shader 'Oculus/OVRMRCameraFrameLit': fallback shader 'Alpha-Diffuse' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 6 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3615 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.5 MB.
+System memory in use after: 168.7 MB.
+
+Unloading 39 unused Assets to reduce memory usage. Loaded Objects now: 4236.
+Total: 2.965700 ms (FindLiveObjects: 0.251000 ms CreateObjectMapping: 0.161700 ms MarkObjects: 2.517300 ms  DeleteObjects: 0.034700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 

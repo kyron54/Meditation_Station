@@ -1640,6 +1640,7 @@ GameObject:
   - component: {fileID: 191496233}
   - component: {fileID: 191496232}
   - component: {fileID: 191496231}
+  - component: {fileID: 191496237}
   m_Layer: 0
   m_Name: Food
   m_TagString: Untagged
@@ -1655,9 +1656,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191496230}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 5
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -1756,6 +1757,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &191496237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191496230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dea35ecd7e34dc444b5d1be28562cce5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &193286885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4517,6 +4530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomHandRight
       objectReference: {fileID: 0}
+    - target: {fileID: 195418, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
+      propertyPath: m_TagString
+      value: Hand
+      objectReference: {fileID: 0}
     - target: {fileID: 422740, guid: ba1fa4a8c66106b4988c88fe4b8e8502, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6576,6 +6593,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CustomHandLeft
       objectReference: {fileID: 0}
+    - target: {fileID: 143668, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+      propertyPath: m_TagString
+      value: Hand
+      objectReference: {fileID: 0}
     - target: {fileID: 414912, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7944,21 +7965,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8912300242611790799, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 23
+      value: 28.67
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.07
+      value: 3.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 44.63
+      value: 46.25
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7994,7 +8019,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
@@ -8003,19 +8028,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f2a9e56e3e7700b46bd0aeaa7fc405c4, type: 3}
   m_PrefabInstance: {fileID: 1229319775}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &1229319777
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1229319776}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.20174026, y: 0.21774864, z: 0.7150345}
-  m_Center: {x: 0.08233833, y: 0.13755703, z: -0.14248276}
 --- !u!114 &1229319778
 MonoBehaviour:
   m_ObjectHideFlags: 0
