@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2776837605341894729}
+  - component: {fileID: -6992515850555340080}
   m_Layer: 0
   m_Name: ShroomPrefab_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2776837605341894729
 Transform:
@@ -31,6 +32,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &-6992515850555340080
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588168406825291767}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0014909506, y: 0.15949939, z: -0.0028201789}
+  m_Size: 0.34782335
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5242778104420381905}
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5242778104420381905}
+  - screenRelativeHeight: 0.017187234
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5242778104420381905}
+  m_Enabled: 1
 --- !u!1 &2629493110857841175
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,7 +75,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &8677716238187142815
 Transform:
