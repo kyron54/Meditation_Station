@@ -1769,6 +1769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea35ecd7e34dc444b5d1be28562cce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  force: 500
 --- !u!1001 &193286885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11931,7 +11932,7 @@ GameObject:
   - component: {fileID: 1828130295}
   m_Layer: 0
   m_Name: Animal Mouth
-  m_TagString: Untagged
+  m_TagString: Animal Mouth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
