@@ -1,34 +1,9 @@
 fileFormatVersion: 2
-guid: 483860ca01bbb1b408b08955480d5a6a
+guid: aa038d191cf2e4840bee0e8b12e3ce1c
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: shroom 4
-    second: {fileID: 2100000, guid: b21e51ef228e04c49859c6e5c91458c5, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Mat.1_Color
-    second: {fileID: 2800000, guid: 7e13cd4f264394a42b9c0148d371a851, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Mat_Color
-    second: {fileID: 2800000, guid: 39074041378e0084c925f9131f1f49d2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Mat_Color_0
-    second: {fileID: 2800000, guid: b95953a8d4754a7498520a7359e36ad6, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Mat_Color_1
-    second: {fileID: 2800000, guid: cf379a523fba3c44f80cb63dae42828a, type: 3}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -59,7 +34,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 2
+    globalScale: 0.1
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -110,7 +85,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.02
+    globalScale: 0.001
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
