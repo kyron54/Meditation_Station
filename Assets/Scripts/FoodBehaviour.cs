@@ -30,6 +30,7 @@ public class FoodBehaviour : MonoBehaviour
             isGrabbed = true;
         }
 
+        
         if(collision.gameObject.CompareTag("Animal Mouth"))
         {
             Destroy(gameObject);
@@ -38,13 +39,5 @@ public class FoodBehaviour : MonoBehaviour
         
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        if(collision.gameObject.CompareTag("Hand"))
-        {
-            rb.AddForce(Vector3.down * force);
-            isGrabbed = false;
-            
-        }
-    }
+
 }
