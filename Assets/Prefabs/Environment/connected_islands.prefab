@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8256316766063863998}
   - component: {fileID: 2031520663759271258}
   - component: {fileID: -991930057531181263}
+  - component: {fileID: -6367493208024643109}
   m_Layer: 0
   m_Name: connected_islands
   m_TagString: Untagged
@@ -107,3 +108,17 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &-6367493208024643109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3989352544423722612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48398b945af3fb84995f644e75244719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.15
+  maxPosition: 20

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4582213721910855703}
   - component: {fileID: 4490513194930598753}
   - component: {fileID: 4377627957244933509}
-  - component: {fileID: 1957024699160631420}
+  - component: {fileID: 7445551471549900664}
   m_Layer: 0
   m_Name: island3_connected
   m_TagString: Untagged
@@ -83,19 +83,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!111 &1957024699160631420
-Animation:
+--- !u!114 &7445551471549900664
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519776916589264516}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 3ec3e13fe7044b24c88241bb69f7e58b, type: 2}
-  m_Animations:
-  - {fileID: 7400000, guid: 3ec3e13fe7044b24c88241bb69f7e58b, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48398b945af3fb84995f644e75244719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.05
+  maxPosition: 25

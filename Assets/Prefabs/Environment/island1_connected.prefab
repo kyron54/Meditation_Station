@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6079223161539614066}
   - component: {fileID: 3523167374711026830}
   - component: {fileID: -8063729223132498697}
+  - component: {fileID: -922306275454758868}
   m_Layer: 0
   m_Name: island1_connected
   m_TagString: Untagged
@@ -107,3 +108,17 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &-922306275454758868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6864455748797644086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48398b945af3fb84995f644e75244719, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.1
+  maxPosition: 15
