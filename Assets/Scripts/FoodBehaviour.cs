@@ -13,6 +13,7 @@ public class FoodBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
         rb.isKinematic = true;
+      //  rb.constraints = RigidbodyConstraints.FreezePosition;
     }
 
     // Update is called once per frame
@@ -26,8 +27,9 @@ public class FoodBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hand"))
         {
-            rb.isKinematic = false;
-           
+           //  rb.isKinematic = false;
+
+          //  rb.constraints = RigidbodyConstraints.None;
         }
 
         
@@ -37,6 +39,24 @@ public class FoodBehaviour : MonoBehaviour
         }
 
         
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Hand"))
+        {
+           // rb.isKinematic = false;
+
+          //  rb.constraints = RigidbodyConstraints.None;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("Hand"))
+        {
+            rb.isKinematic = false;
+        }
     }
 
 
