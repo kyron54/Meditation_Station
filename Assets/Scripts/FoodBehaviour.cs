@@ -6,13 +6,13 @@ public class FoodBehaviour : MonoBehaviour
 {
     private Rigidbody rb;
 
-    public float force = 500;
-
-    private bool isGrabbed;
+   
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
+        rb.isKinematic = true;
     }
 
     // Update is called once per frame
@@ -26,8 +26,8 @@ public class FoodBehaviour : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Hand"))
         {
-            rb.useGravity = true;
-            isGrabbed = true;
+            rb.isKinematic = false;
+           
         }
 
         
