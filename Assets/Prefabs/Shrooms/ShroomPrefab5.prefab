@@ -94,7 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb26d5f89f8e91c448e874865b44a8aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distancetoPlayer: 2
+  distancetoPlayer: 1
   targetPos: {fileID: 388821129436613895}
   spores: {fileID: 7539852769883062634, guid: eee4148bd4d65d44a86152d7e1d7a6d4, type: 3}
   maxSpores: 2
