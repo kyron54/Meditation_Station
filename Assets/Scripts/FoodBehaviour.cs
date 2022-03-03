@@ -12,8 +12,8 @@ public class FoodBehaviour : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        rb.isKinematic = true;
-      //  rb.constraints = RigidbodyConstraints.FreezePosition;
+       // rb.isKinematic = true;
+        rb.constraints = RigidbodyConstraints.FreezePosition;
     }
 
     // Update is called once per frame
@@ -47,16 +47,43 @@ public class FoodBehaviour : MonoBehaviour
         {
            // rb.isKinematic = false;
 
-          //  rb.constraints = RigidbodyConstraints.None;
+          
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Hand"))
+       /* if(other.gameObject.CompareTag("Hand"))
         {
             rb.isKinematic = false;
         }
+       */
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        /*  if (other.gameObject.CompareTag("Hand")  && OVRInput.GetDown(OVRInput.RawButton.RHandTrigger))
+          {
+              rb.isKinematic = false;
+          }
+
+          */
+
+        if (other.gameObject.CompareTag("Hand") && OVRInput.GetDown(OVRInput.RawButton.RHandTrigger))
+        {
+            rb.constraints = RigidbodyConstraints.None;
+        }
+       
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+       /* if(other.gameObject.CompareTag("Hand"))
+        {
+            rb.isKinematic = false;
+        }
+
+        */
     }
 
 
