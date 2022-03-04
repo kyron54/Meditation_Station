@@ -12,8 +12,8 @@ public class FoodBehaviour : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
 
-        rb.isKinematic = true;
-      //  rb.constraints = RigidbodyConstraints.FreezePosition;
+       // rb.isKinematic = true;
+        rb.constraints = RigidbodyConstraints.FreezePosition;
     }
 
     // Update is called once per frame
@@ -21,6 +21,13 @@ public class FoodBehaviour : MonoBehaviour
     {
        
        
+    }
+
+    IEnumerator ActivateFruit()
+    {
+        yield return new WaitForSeconds(2);
+
+        rb.constraints = RigidbodyConstraints.None;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -33,10 +40,7 @@ public class FoodBehaviour : MonoBehaviour
         }
 
         
-        if(collision.gameObject.CompareTag("Animal Mouth"))
-        {
-            Destroy(gameObject);
-        }
+      
 
         
     }
@@ -47,16 +51,48 @@ public class FoodBehaviour : MonoBehaviour
         {
            // rb.isKinematic = false;
 
-          //  rb.constraints = RigidbodyConstraints.None;
+          
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Hand"))
+         if(other.gameObject.CompareTag("Hand"))
+         {
+            StartCoroutine(ActivateFruit());
+         }
+        
+
+        if (other.gameObject.CompareTag("Animal Mouth"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        /*  if (other.gameObject.CompareTag("Hand")  && OVRInput.GetDown(OVRInput.RawButton.RHandTrigger))
+          {
+              rb.isKinematic = false;
+          }
+
+          */
+
+        if (other.gameObject.CompareTag("Hand") && OVRInput.GetDown(OVRInput.RawButton.RHandTrigger))
+        {
+            rb.constraints = RigidbodyConstraints.None;
+        }
+       
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+       /* if(other.gameObject.CompareTag("Hand"))
         {
             rb.isKinematic = false;
         }
+
+        */
     }
 
 
