@@ -837,8 +837,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681467135338600995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0503, y: 0, z: -0.0114}
-  m_LocalScale: {x: 0.2, y: 0.01, z: 0.2}
+  m_LocalPosition: {x: 0.0503, y: 0.025, z: -0.0114}
+  m_LocalScale: {x: 0.573386, y: 0.01, z: 0.51833165}
   m_Children: []
   m_Father: {fileID: 7670471572755985238}
   m_RootOrder: 9
@@ -13857,6 +13857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7670471572755985238}
   - component: {fileID: 8228513924508756307}
+  - component: {fileID: 6324085480738436007}
   m_Layer: 0
   m_Name: LilypadPrefab
   m_TagString: Untagged
@@ -13902,8 +13903,22 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 122
+  m_Constraints: 4
   m_CollisionDetection: 0
+--- !u!114 &6324085480738436007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7670471572755985239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51782f2cbb1c545a3bf234fd133d9391, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0.01
+  rotationSpeed: 90
 --- !u!1 &7786814396785744601
 GameObject:
   m_ObjectHideFlags: 0

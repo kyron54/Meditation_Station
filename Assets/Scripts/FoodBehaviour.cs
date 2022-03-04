@@ -23,6 +23,13 @@ public class FoodBehaviour : MonoBehaviour
        
     }
 
+    IEnumerator ActivateFruit()
+    {
+        yield return new WaitForSeconds(2);
+
+        rb.constraints = RigidbodyConstraints.None;
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.CompareTag("Hand"))
@@ -33,10 +40,7 @@ public class FoodBehaviour : MonoBehaviour
         }
 
         
-        if(collision.gameObject.CompareTag("Animal Mouth"))
-        {
-            Destroy(gameObject);
-        }
+      
 
         
     }
@@ -53,11 +57,16 @@ public class FoodBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-       /* if(other.gameObject.CompareTag("Hand"))
+         if(other.gameObject.CompareTag("Hand"))
+         {
+            StartCoroutine(ActivateFruit());
+         }
+        
+
+        if (other.gameObject.CompareTag("Animal Mouth"))
         {
-            rb.isKinematic = false;
+            Destroy(gameObject);
         }
-       */
     }
 
     private void OnTriggerStay(Collider other)
