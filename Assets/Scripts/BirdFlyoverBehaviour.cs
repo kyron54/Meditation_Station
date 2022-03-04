@@ -36,7 +36,7 @@ public class BirdFlyoverBehaviour : MonoBehaviour
 
         // Triggers shrink
         if (!shrinkStarted && transform.position.x > 300 || transform.position.z > 300 ||
-            transform.position.x < -100 || transform.position.z > -300)
+            transform.position.x < -100 || transform.position.z < -300)
         {
             // Prevents coroutine from starting multiple times
             shrinkStarted = true;
@@ -59,17 +59,18 @@ public class BirdFlyoverBehaviour : MonoBehaviour
     /// <returns>waits before shrinking</returns>
     IEnumerator Shrink()
     {
-        while(transform.localScale.magnitude > 0)
+        while(transform.localScale.x > 0)
         {
             // Shrinks the bird
             transform.localScale -= new Vector3(.01f, .01f, .01f);
 
             // Delays
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(.01f);
         }
 
         // Triggers teleport
         Teleport();
+        StopCoroutine(Shrink());
     }
 
     /// <summary>
@@ -77,7 +78,16 @@ public class BirdFlyoverBehaviour : MonoBehaviour
     /// </summary>
     void Teleport()
     {
+        // Moves birds to new point
         transform.position = teleDest;
+
+        // Sets direction and (scale) magnitude. VECTOR OH YEAHH!!!
+        transform.eulerAngles = new Vector3(0, -43, 0);
+        transform.localScale = new Vector3(1, 1, 1);
+
+        //Makes sure shrinking can happen again
+        shrinkStarted = false;
+
     }
 
 }
