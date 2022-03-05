@@ -8,6 +8,9 @@ using UnityEngine;
 
 public class BirdFlyoverBehaviour : MonoBehaviour
 {
+    // Triggers the start of the flight
+    public bool startFlight = false;
+
     // Makes sure shrinkage isn't rapid
     bool shrinkStarted = false;
 
@@ -32,7 +35,10 @@ public class BirdFlyoverBehaviour : MonoBehaviour
     void Update()
     {
         // Controls movement
-        Movement();
+        if (startFlight)
+        {
+            Movement();
+        }
 
         // Triggers shrink
         if (!shrinkStarted && transform.position.x > 300 || transform.position.z > 300 ||
