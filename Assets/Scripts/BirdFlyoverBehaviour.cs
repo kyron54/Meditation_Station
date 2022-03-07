@@ -19,7 +19,7 @@ public class BirdFlyoverBehaviour : MonoBehaviour
 
     // These vars set the location the birds teleport to
     [SerializeField] GameObject destObject;
-    [SerializeField] Vector3 teleDest;
+    Vector3 teleDest;
 
     /// <summary>
     /// Start is called before the first frame update
@@ -41,8 +41,8 @@ public class BirdFlyoverBehaviour : MonoBehaviour
         }
 
         // Triggers shrink
-        if (!shrinkStarted && transform.position.x > 300 || transform.position.z > 300 ||
-            transform.position.x < -100 || transform.position.z < -300)
+        if (!shrinkStarted && transform.position.x > 600 || transform.position.z > 600 ||
+            transform.position.x < -200 || transform.position.z < -600)
         {
             // Prevents coroutine from starting multiple times
             shrinkStarted = true;
