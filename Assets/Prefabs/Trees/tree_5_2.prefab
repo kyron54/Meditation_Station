@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1665472221967393559}
   - component: {fileID: 8655125481037873591}
   - component: {fileID: 4727304639440219861}
-  - component: {fileID: -7332602387131682591}
+  - component: {fileID: -4587842417318472648}
   m_Layer: 0
   m_Name: tree_5_2
   m_TagString: Untagged
@@ -52,7 +52,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
+  m_DynamicOccludee: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -94,8 +94,8 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: -0.23644686, y: 3.2113216, z: -0.03949499}
   m_Size: 6.972939
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
+  m_FadeMode: 2
+  m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
   - screenRelativeHeight: 0.6
@@ -111,8 +111,8 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8655125481037873591}
   m_Enabled: 1
---- !u!64 &-7332602387131682591
-MeshCollider:
+--- !u!136 &-4587842417318472648
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -121,7 +121,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6039361633452118772, guid: a368c231ee2fcba4c99f744d1d9baf6a, type: 3}
+  m_Radius: 3.839738
+  m_Height: 26.148523
+  m_Direction: 1
+  m_Center: {x: 1.417078, y: 7.5299997, z: 0}

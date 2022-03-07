@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 99ffd8b634fa15e48bdcaf4f2915586c
+  - enabled: 1
+    path: Assets/Scenes/How To.unity
+    guid: b7e6329a911ae2143ad03e7098911053
   - enabled: 1
     path: Assets/Scenes/Environment.unity
     guid: 8943a7782beaf434882ac688776f74d7
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 0
     path: Assets/Scenes/Kadin Scene.unity
     guid: 8a0622d35c6ac0b48ac5bea7ad8698e1
