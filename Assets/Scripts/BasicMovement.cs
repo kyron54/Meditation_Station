@@ -18,10 +18,14 @@ public class BasicMovement : MonoBehaviour
     // The variable that controls Back and Forth movement speed
     private float moveZ;
 
+    private bool isWalking = false;
+
+    AudioSource normalStep;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        normalStep = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +36,7 @@ public class BasicMovement : MonoBehaviour
         ControllerRotateCamera();
         MouseRotateCamera();
         MovePlayer();
+        playFootsteps();
 
     }
 
@@ -78,6 +83,15 @@ public class BasicMovement : MonoBehaviour
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
 
+        if(moveX > 0 || moveZ > 0)
+        {
+            isWalking = true;
+        }
+        else
+        {
+            isWalking = false;
+        }
+
         Vector3 camF = transform.forward;
         Vector3 camR = transform.right;
 
@@ -88,5 +102,17 @@ public class BasicMovement : MonoBehaviour
 
         //transform.position += new Vector3(moveX, 0f, moveZ) * moveSpeed * Time.deltaTime;
         transform.position += (camF * moveZ + camR * moveX) * moveSpeed * Time.deltaTime;
+    }
+
+    void playFootsteps()
+    {
+        if(isWalking)
+        {
+            normalStep.Play();
+        }
+        else
+        {
+            normalStep.Pause();
+        }
     }
 }

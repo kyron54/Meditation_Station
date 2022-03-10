@@ -15,7 +15,6 @@ MonoBehaviour:
   streamPlayer:
     exposedName: b2bee8a9d2735f547b40f54b6e1f57d5
     defaultValue: {fileID: 0}
-  endOffset: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
