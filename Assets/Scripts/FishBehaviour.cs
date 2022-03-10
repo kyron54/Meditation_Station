@@ -24,12 +24,14 @@ public class FishBehaviour : MonoBehaviour
 
     public void Movement()
     {
-        currentWaypoint = Random.Range(0, waypoints.Length);
+        
 
         if (Vector3.Distance(waypoints[currentWaypoint].transform.position, transform.position)
           < waypointRadius)
         {
-           // currentWaypoint++;
+
+            currentWaypoint = Random.Range(0, waypoints.Length);
+            // currentWaypoint++;
             if (currentWaypoint >= waypoints.Length)
             {
                 currentWaypoint = 0;
@@ -39,5 +41,7 @@ public class FishBehaviour : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position,
               waypoints[currentWaypoint].transform.position, Time.deltaTime
               * Speed);
+
+        transform.LookAt(waypoints[currentWaypoint].transform.position);
     }
 }
