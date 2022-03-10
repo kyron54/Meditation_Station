@@ -60,6 +60,8 @@ public class BoatActBehaviour : MonoBehaviour
             && !stopMovement)
         {
             Movement();
+
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 
