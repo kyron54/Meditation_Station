@@ -11,19 +11,20 @@ public class FishBehaviour : MonoBehaviour
 
     public float Speed = 3;
 
-    private float rotSpeed;
+   public float rotSpeed;
 
     public float degreesPerSecond;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
     void Update()
     {
         Movement();
+        
     }
 
     public void Movement()
@@ -48,14 +49,24 @@ public class FishBehaviour : MonoBehaviour
 
         // transform.LookAt(waypoints[currentWaypoint].transform.position);
 
+
+
+        /*  Vector3 directionFromMeToTarget = waypoints[currentWaypoint].transform.position
+              - transform.position;
+          directionFromMeToTarget.x = 0.0f;
+          Quaternion lookRotation = Quaternion.LookRotation(directionFromMeToTarget);
+
+          transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation,
+              Time.deltaTime * degreesPerSecond / 360.0f);
+        */
+        rotSpeed = Speed * Random.Range(1f, 3f);
+
+        Vector3 lookAt = waypoints[currentWaypoint].transform.position
+            - this.transform.position;
+
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookAt),
+            rotSpeed * Time.deltaTime);
+
         
-
-        Vector3 directionFromMeToTarget = waypoints[currentWaypoint].transform.position
-            - transform.position;
-        directionFromMeToTarget.x = 0.0f;
-        Quaternion lookRotation = Quaternion.LookRotation(directionFromMeToTarget);
-
-        transform.rotation = Quaternion.Lerp(transform.rotation, lookRotation,
-            Time.deltaTime * degreesPerSecond / 360.0f);
     }
 }
