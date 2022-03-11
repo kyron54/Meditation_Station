@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 6
   m_IsActive: 1
 --- !u!4 &6549262491074497854
 Transform:
@@ -93,14 +93,14 @@ GameObject:
   - component: {fileID: 8218627324686052242}
   - component: {fileID: 8139779227269908726}
   - component: {fileID: 3384953617540844695}
-  - component: {fileID: 4645027863927379387}
   - component: {fileID: 6387592301995499588}
+  - component: {fileID: -1972546610595088644}
   m_Layer: 0
   m_Name: tree_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 6
   m_IsActive: 1
 --- !u!4 &8218627324686052242
 Transform:
@@ -169,20 +169,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4645027863927379387
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2653785194432425803}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6842364007864691897, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}
 --- !u!205 &6387592301995499588
 LODGroup:
   m_ObjectHideFlags: 0
@@ -193,7 +179,7 @@ LODGroup:
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0.24987078, y: 9.155344, z: -0.32930565}
   m_Size: 18.26892
-  m_FadeMode: 2
+  m_FadeMode: 1
   m_AnimateCrossFading: 1
   m_LastLODIsBillboard: 0
   m_LODs:
@@ -210,6 +196,20 @@ LODGroup:
     renderers:
     - renderer: {fileID: 3984901879281734412}
   m_Enabled: 1
+--- !u!136 &-1972546610595088644
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2653785194432425803}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 2.2395332
+  m_Height: 18.268923
+  m_Direction: 1
+  m_Center: {x: 0, y: 8, z: 0}
 --- !u!1 &7298045228597251293
 GameObject:
   m_ObjectHideFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 6
   m_IsActive: 1
 --- !u!4 &8782728648641807588
 Transform:
@@ -347,9 +347,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -2845779275431937956, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}
       propertyPath: m_Name
       value: tree_2_LOD0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5806289128997267081, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d58fd2da3ab0fbc4fac1204f7a716336, type: 3}

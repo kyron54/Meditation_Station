@@ -5,31 +5,40 @@ using UnityEngine;
 public class MistFade : MonoBehaviour
 {
     [SerializeField] private GameObject player;
-    [SerializeField] private GameObject mistExit;
-    [SerializeField] private GameObject mistSphere;
+    [SerializeField] private GameObject mist;
 
-    private float playerX;
-    private float playerZ;
-    private float mistX;
-    private float mistZ;
+    [SerializeField] private float smoothFade;
+    [SerializeField] private float fadeSpeed;
+    [SerializeField] private float fadeMin;
 
-    private void Awake()
+    bool fadingIn = true;
+
+    private void OnTriggerEnter(Collider other)
     {
-        mistX = mistExit.transform.position.z;
-        mistZ = mistExit.transform.position.z;
+        
+        if (other.gameObject == player)
+        {
+            StartCoroutine(Fade());
+        }
     }
 
-    private void OnTriggerStay(Collider other)
+    IEnumerator Fade()
     {
-        if (other.name == player.name)
+        if (fadingIn)
         {
-            playerX = player.transform.position.x;
-            playerZ = player.transform.position.z;
-
-            float distance = Mathf.Sqrt(Mathf.Pow((playerX - mistX), 2) + Mathf.Pow((playerZ - mistZ), 2));
-
-            Color mistColor = mistSphere.GetComponent<MeshRenderer>().material.color;
-            mistColor.a = (distance / 10f);
+            // For some reason, "Vector1_014feeecad424ce4ab7b8624bba25862" is the name of the
+            // alpha property of the mist sphere's shader
+            for (float i = mist.gameObject.GetComponent<Renderer>().material.GetFloat("Vector1_014feeecad424ce4ab7b8624bba25862");
+                i >= fadeMin; i -= smoothFade)
+            {
+                if (fadingIn)
+                {
+                    // "_offset" is, for whatever reason, the name of the GradientRise property
+                    mist.gameObject.GetComponent<Renderer>().material.SetFloat("Vector1_014feeecad424ce4ab7b8624bba25862", i);
+                    yield return new WaitForSeconds(fadeSpeed);
+                }
+            }
+            GetComponent<Collider>().gameObject.SetActive(false);
         }
     }
 }
