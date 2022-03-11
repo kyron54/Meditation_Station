@@ -13,7 +13,10 @@ public class FoodBehaviour : MonoBehaviour
         rb = GetComponent<Rigidbody>();
 
        // rb.isKinematic = true;
-        rb.constraints = RigidbodyConstraints.FreezePosition;
+       // rb.constraints = RigidbodyConstraints.FreezePosition;
+       // rb.constraints = RigidbodyConstraints.FreezeRotation;
+
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 
     // Update is called once per frame
