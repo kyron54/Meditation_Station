@@ -36,7 +36,7 @@ public class BasicMovement : MonoBehaviour
         ControllerRotateCamera();
         MouseRotateCamera();
         MovePlayer();
-        playFootsteps();
+        //playFootsteps();
 
     }
 
@@ -83,14 +83,14 @@ public class BasicMovement : MonoBehaviour
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
 
-        if(moveX > 0 || moveZ > 0)
+        /*if(moveX > 0 || moveZ > 0)
         {
             isWalking = true;
         }
         else
         {
             isWalking = false;
-        }
+        }*/
 
         Vector3 camF = transform.forward;
         Vector3 camR = transform.right;
