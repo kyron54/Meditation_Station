@@ -7,12 +7,14 @@ public class PlayerAudioManager : MonoBehaviour
     OVRPlayerController control;
 
     [SerializeField] private AudioSource normalStep;
+    CharacterController controller;
 
     // Start is called before the first frame update
     void Start()
     {
         control = gameObject.GetComponent<OVRPlayerController>();
         normalStep = gameObject.GetComponent<AudioSource>();
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -23,7 +25,8 @@ public class PlayerAudioManager : MonoBehaviour
 
     void Footsteps()
     {
-        if(control.Acceleration > 0)
+        Vector3 forwardMove = controller.velocity;
+        if(controller.velocity.x < 0 || controller.velocity.z < 0)
         {
             normalStep.Play();
         }
