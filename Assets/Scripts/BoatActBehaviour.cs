@@ -40,10 +40,12 @@ public class BoatActBehaviour : MonoBehaviour
         transform.position = Vector3.MoveTowards(transform.position,
               waypoints[currentWaypoint].transform.position, Time.deltaTime
               * Speed);
-        if(transform.position == waypoints[4].transform.position)
+       /* if(transform.position == waypoints[4].transform.position)
         {
             transform.position = waypoints[4].transform.position;
         }
+
+        */
         Debug.Log("isRunning");
 
         //transform.Translate(Vector3.right * Speed * Time.deltaTime);
