@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class OcclusionTrigger : MonoBehaviour
 {
-    OcclusionPortal myOc;
+    public OcclusionPortal myOc;
     // Start is called before the first frame update
     void Start()
     {
-        myOc = GetComponent<OcclusionPortal>();
+       // myOc = GetComponent<OcclusionPortal>();
     }
 
     // Update is called once per frame
@@ -19,11 +19,17 @@ public class OcclusionTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        myOc.open = false;
+        if (other.tag == "Player")
+        {
+            myOc.open = false;
+        }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        myOc.open = true;
+        if (other.tag == "Player")
+        {
+            myOc.open = true;
+        }
     }
 }
