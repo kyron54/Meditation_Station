@@ -8,6 +8,8 @@ public class WolfBehaviour : MonoBehaviour
     int currentWaypoint = 0;
     public float waypointRadius;
 
+    public GameObject player;
+
     public float Speed = 3;
 
     public float rotSpeed;
@@ -19,6 +21,8 @@ public class WolfBehaviour : MonoBehaviour
     public float resetTime = 10.0f;
 
     private Animator anim;
+    public int waypointtoStop;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +32,20 @@ public class WolfBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Movement();
+        if(Vector3.Distance(transform.position, player.transform.position)
+            > 3.0f)
+        {
+            Movement();
+            anim.SetBool("isPet", false);
+        }
+
+        if (Vector3.Distance(transform.position, player.transform.position)
+            < 3.0f)
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isPet", true);
+        }
+
 
     }
 
@@ -37,6 +54,23 @@ public class WolfBehaviour : MonoBehaviour
         yield return new WaitForSeconds(resetTime);
 
         numofWaypoints = 0;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Hand"))
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isPet", true);
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("Hand"))
+        {
+            anim.SetBool("isPet", false);
+        }
     }
 
     public void Movement()
@@ -48,6 +82,9 @@ public class WolfBehaviour : MonoBehaviour
         {
             numofWaypoints++;
             currentWaypoint = Random.Range(0, waypoints.Length);
+
+            waypointtoStop = Random.Range(1, 16);
+           
             // currentWaypoint++;
             if (currentWaypoint >= waypoints.Length)
             {
@@ -56,7 +93,7 @@ public class WolfBehaviour : MonoBehaviour
         }
 
 
-        if (numofWaypoints <= 10)
+        if (numofWaypoints <= waypointtoStop)
         {
             transform.position = Vector3.MoveTowards(transform.position,
              waypoints[currentWaypoint].transform.position, Time.deltaTime
@@ -73,11 +110,16 @@ public class WolfBehaviour : MonoBehaviour
                 rotSpeed * Time.deltaTime);
         }
 
-        if(numofWaypoints > 10)
+        if(numofWaypoints > waypointtoStop)
         {
             anim.SetBool("isWalking", false);
 
             StartCoroutine(StartReset());
+        }
+
+        if(transform.rotation.z >= 90 || transform.rotation.z <= -90)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         // transform.LookAt(waypoints[currentWaypoint].transform.position);
