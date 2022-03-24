@@ -36,14 +36,14 @@ public class WolfBehaviour : MonoBehaviour
             > 3.0f)
         {
             Movement();
-            anim.SetBool("isPet", false);
+          //  anim.SetBool("isPet", false);
         }
 
         if (Vector3.Distance(transform.position, player.transform.position)
             < 3.0f)
         {
             anim.SetBool("isWalking", false);
-            anim.SetBool("isPet", true);
+          //  anim.SetBool("isPet", true);
         }
 
 
@@ -56,22 +56,26 @@ public class WolfBehaviour : MonoBehaviour
         numofWaypoints = 0;
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.CompareTag("Hand"))
+        if(other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerExit(Collider other)
     {
-        if(collision.gameObject.CompareTag("Hand"))
+        if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", false);
         }
     }
+
+  
 
     public void Movement()
     {
