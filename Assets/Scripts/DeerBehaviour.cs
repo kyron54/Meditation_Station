@@ -27,13 +27,25 @@ public class DeerBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Vector3.Distance(transform.position, player.transform.position)
+         > 3.0f)
+        {
+            Movement();
+            //  anim.SetBool("isPet", false);
+        }
+
+        if (Vector3.Distance(transform.position, player.transform.position)
+            < 3.0f)
+        {
+            anim.SetBool("isWalking", false);
+            //  anim.SetBool("isPet", true);
+        }
     }
 
     IEnumerator StartReset()
