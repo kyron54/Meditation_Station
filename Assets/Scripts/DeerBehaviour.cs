@@ -37,14 +37,31 @@ public class DeerBehaviour : MonoBehaviour
          > 3.0f)
         {
             Movement();
-            //  anim.SetBool("isPet", false);
+          
         }
 
         if (Vector3.Distance(transform.position, player.transform.position)
             < 3.0f)
         {
             anim.SetBool("isWalking", false);
-            //  anim.SetBool("isPet", true);
+           
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Hand"))
+        {
+            anim.SetBool("isWalking", false);
+            anim.SetBool("isPet", true);
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Hand"))
+        {
+            anim.SetBool("isPet", false);
         }
     }
 
