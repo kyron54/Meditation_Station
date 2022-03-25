@@ -67,6 +67,7 @@ public class DeerBehaviour : MonoBehaviour
         if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", true);
+            
         }
     }
 
@@ -80,6 +81,7 @@ public class DeerBehaviour : MonoBehaviour
         if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", false);
+            anim.SetBool("isWalking", true);
         }
     }
 
@@ -117,7 +119,7 @@ public class DeerBehaviour : MonoBehaviour
              * Speed);
 
             anim.SetBool("isWalking", true);
-
+            anim.SetBool("isEating", false);
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
             Vector3 lookAt = waypoints[currentWaypoint].transform.position
