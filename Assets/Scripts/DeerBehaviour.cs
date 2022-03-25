@@ -24,6 +24,13 @@ public class DeerBehaviour : MonoBehaviour
     private Animator anim;
     public int waypointtoStop;
 
+
+    public GameObject pinkFruit1;
+    public GameObject pinkFruit2;
+    public GameObject pinkFruit3;
+    public GameObject pinkFruit4;
+    public GameObject pinkFruit5;
+    public GameObject pinkFruit6;
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +53,83 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
            
         }
+
+
+
+        if (Vector3.Distance(transform.position, pinkFruit1.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit2.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit3.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit4.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit5.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit6.transform.position)
+            < .5f)
+        {
+            anim.SetBool("isEating", true);
+        }
+
+
+
+        if (Vector3.Distance(transform.position, pinkFruit1.transform.position)
+           > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit2.transform.position)
+            > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit3.transform.position)
+            > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit4.transform.position)
+            > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit5.transform.position)
+            > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
+        if (Vector3.Distance(transform.position, pinkFruit6.transform.position)
+            > .5f)
+        {
+            anim.SetBool("isEating", false);
+        }
+
     }
 
     private void OnTriggerEnter(Collider other)
