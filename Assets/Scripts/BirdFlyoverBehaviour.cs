@@ -88,8 +88,8 @@ public class BirdFlyoverBehaviour : MonoBehaviour
         transform.position = teleDest;
 
         // Sets direction and (scale) magnitude. VECTOR OH YEAHH!!!
-        transform.eulerAngles = new Vector3(0, -43, 0);
-        transform.localScale = new Vector3(1, 1, 1);
+        transform.eulerAngles = new Vector3(0, -223, 0);
+        transform.localScale = new Vector3(.1f, .1f, .1f);
 
         //Makes sure shrinking can happen again
         shrinkStarted = false;
