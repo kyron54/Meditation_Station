@@ -36,6 +36,7 @@ public class BasicMovement : MonoBehaviour
         ControllerRotateCamera();
         MouseRotateCamera();
         MovePlayer();
+        //playFootsteps();
 
     }
 
@@ -101,5 +102,17 @@ public class BasicMovement : MonoBehaviour
 
         //transform.position += new Vector3(moveX, 0f, moveZ) * moveSpeed * Time.deltaTime;
         transform.position += (camF * moveZ + camR * moveX) * moveSpeed * Time.deltaTime;
+    }
+
+    void playFootsteps()
+    {
+        if(isWalking)
+        {
+            normalStep.Play();
+        }
+        else
+        {
+            normalStep.Pause();
+        }
     }
 }
