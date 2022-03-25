@@ -26,7 +26,7 @@ public class PlayerAudioManager : MonoBehaviour
     void Footsteps()
     {
         Vector3 forwardMove = controller.velocity;
-        if(controller.velocity.x < 0 || controller.velocity.z < 0)
+        if(controller.velocity.magnitude > 0)
         {
             normalStep.Play();
         }
