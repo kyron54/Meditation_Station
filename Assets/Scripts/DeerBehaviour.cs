@@ -25,12 +25,7 @@ public class DeerBehaviour : MonoBehaviour
     public int waypointtoStop;
 
 
-    public GameObject pinkFruit1;
-    public GameObject pinkFruit2;
-    public GameObject pinkFruit3;
-    public GameObject pinkFruit4;
-    public GameObject pinkFruit5;
-    public GameObject pinkFruit6;
+   
     // Start is called before the first frame update
     void Start()
     {
