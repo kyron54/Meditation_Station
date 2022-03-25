@@ -54,82 +54,6 @@ public class DeerBehaviour : MonoBehaviour
            
         }
 
-
-
-        if (Vector3.Distance(transform.position, pinkFruit1.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit2.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit3.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit4.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit5.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit6.transform.position)
-            < .5f)
-        {
-            anim.SetBool("isEating", true);
-        }
-
-
-
-        if (Vector3.Distance(transform.position, pinkFruit1.transform.position)
-           > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit2.transform.position)
-            > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit3.transform.position)
-            > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit4.transform.position)
-            > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit5.transform.position)
-            > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
-        if (Vector3.Distance(transform.position, pinkFruit6.transform.position)
-            > .5f)
-        {
-            anim.SetBool("isEating", false);
-        }
-
     }
 
     private void OnTriggerEnter(Collider other)
@@ -139,6 +63,11 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
         }
+
+        if(other.gameObject.name.Contains("Pink Fruit"))
+        {
+            anim.SetBool("isEating", true);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -146,6 +75,11 @@ public class DeerBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", false);
+        }
+
+        if(other.gameObject.name.Contains("Pink Fruit"))
+        {
+            anim.SetBool("isEating", false);
         }
     }
 
