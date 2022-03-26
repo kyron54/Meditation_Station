@@ -17,6 +17,9 @@ public class BirdStart : MonoBehaviour
     /// <param name="other">Object exiting the trigger</param>
     private void OnTriggerExit(Collider other)
     {
-        bird.GetComponent<BirdFlyoverBehaviour>().startFlight = true;
+        if (other.tag == "Player")
+        {
+            //bird.GetComponent<BirdFlyoverBehaviour>().startFlight = true;
+        }
     }
 }
