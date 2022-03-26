@@ -56,7 +56,7 @@ public class BirdFlyoverBehaviour : MonoBehaviour
     /// </summary>
     void Movement()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        transform.position -= transform.forward * speed * Time.deltaTime;
     }
 
     /// <summary>
