@@ -43,7 +43,17 @@ public class WolfBehaviour : MonoBehaviour
             < 3.0f)
         {
             anim.SetBool("isWalking", false);
-          //  anim.SetBool("isPet", true);
+            //  anim.SetBool("isPet", true);
+
+             Vector3 lookAt = player.transform.position
+                 - this.transform.position;
+
+             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookAt),
+                 rotSpeed * Time.deltaTime);
+
+             
+
+           
         }
 
 

@@ -10947,6 +10947,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1643192310}
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 323023968}
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1346929253}
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1586191749}
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 89845742}
+    - target: {fileID: 3578779212156150621, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
+      propertyPath: waypoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 704069098}
     - target: {fileID: 3900356723477328559, guid: fb3044175dc43314a8e45a7a2b797df8, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -13528,6 +13552,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1643192310}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: waypoints.Array.data[0]
+      value: 
+      objectReference: {fileID: 323023968}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: waypoints.Array.data[1]
+      value: 
+      objectReference: {fileID: 1346929253}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: waypoints.Array.data[2]
+      value: 
+      objectReference: {fileID: 1586191749}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: waypoints.Array.data[3]
+      value: 
+      objectReference: {fileID: 89845742}
+    - target: {fileID: 7319536349554078197, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: waypoints.Array.data[4]
+      value: 
+      objectReference: {fileID: 704069098}
     - target: {fileID: 7590076472203136185, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
       propertyPath: m_Name
       value: Dog_w-o_bulgingEyes
