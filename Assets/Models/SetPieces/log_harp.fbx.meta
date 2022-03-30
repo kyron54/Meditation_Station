@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 58810b2512e1e7044868a96021d1ca94
+guid: e728d97b7fe8f4d4c9429d951b0a8a04
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -9,6 +9,16 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Nature_Mat_01
     second: {fileID: 2100000, guid: f4ad3ce07f6edb04b83bb0ae88488612, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: string
+    second: {fileID: 2100000, guid: 3c6e163ce574bd648af43de03ca34744, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Texture_01
+    second: {fileID: 2800000, guid: f9925df0473a8494da09c4015f2e77e1, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
