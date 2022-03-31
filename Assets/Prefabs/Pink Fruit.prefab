@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 9031946911896070959}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 50.43, y: 3.52, z: 68.63}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3127075685392746449}
   m_Father: {fileID: 0}
@@ -151,6 +151,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8510742749848285589}
     m_Modifications:
+    - target: {fileID: 2163341590659290012, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+      propertyPath: m_Range
+      value: 0.19
+      objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008726, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -197,7 +201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: InitialModule.startSize.scalar
-      value: 0.1
+      value: 0.15
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
@@ -205,11 +209,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 0.7
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+      propertyPath: ColorModule.gradient.maxGradient.atime1
+      value: 53006
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008729, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: m_Name
-      value: InteractableObject_ParticleSystem
+      value: InteractableObjectEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 5395075968146008729, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
