@@ -3,7 +3,17 @@ guid: 1052873b91899024fb2ff352ddfc007a
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: leafy
+    second: {fileID: 2100000, guid: f5e1297a772daa640a8da25659294821, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: text_v4
+    second: {fileID: 2800000, guid: 7e396456e35b4b34e92bab971dbc5c2d, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
