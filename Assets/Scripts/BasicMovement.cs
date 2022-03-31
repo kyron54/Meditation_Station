@@ -94,14 +94,27 @@ public class BasicMovement : MonoBehaviour
 
         Vector3 camF = transform.forward;
         Vector3 camR = transform.right;
+        Vector3 camU = transform.up;
 
         camF.y = 0;
         camR.y = 0;
+        camU.x = 0;
+        camU.z = 0;
         camF = camF.normalized;
         camR = camR.normalized;
 
         //transform.position += new Vector3(moveX, 0f, moveZ) * moveSpeed * Time.deltaTime;
         transform.position += (camF * moveZ + camR * moveX) * moveSpeed * Time.deltaTime;
+
+        if(Input.GetKey(KeyCode.E))
+        {
+            transform.position += camU * (moveSpeed + 1f) * Time.deltaTime;
+        }
+
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.position += camU * -(moveSpeed + 1f) * Time.deltaTime;
+        }
     }
 
     void playFootsteps()
