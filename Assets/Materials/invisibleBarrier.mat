@@ -37,5 +37,6 @@ Material:
     - fill: 1.53
     - offsetSpread: 6.95
     m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _color: {r: 0.44811308, g: 0.9999997, b: 1, a: 1}
   m_BuildTextureStacks: []
