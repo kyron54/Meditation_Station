@@ -44,14 +44,14 @@ public class WolfBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             //  anim.SetBool("isPet", true);
-
-             Vector3 lookAt = player.transform.position
+            anim.SetBool("shouldWag", true);
+            /* Vector3 lookAt = player.transform.position
                  - this.transform.position;
 
              transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookAt),
                  rotSpeed * Time.deltaTime);
 
-             
+             */
 
            
         }
@@ -114,7 +114,8 @@ public class WolfBehaviour : MonoBehaviour
              * Speed);
 
             anim.SetBool("isWalking", true);
-
+            //  anim.SetBool("shouldWag", false);
+            anim.SetBool("shouldWag", false);
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
             Vector3 lookAt = waypoints[currentWaypoint].transform.position
@@ -127,7 +128,7 @@ public class WolfBehaviour : MonoBehaviour
         if(numofWaypoints > waypointtoStop)
         {
             anim.SetBool("isWalking", false);
-
+           // anim.SetBool("shouldWag", true);
             StartCoroutine(StartReset());
         }
 
