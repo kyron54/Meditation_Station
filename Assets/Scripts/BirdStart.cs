@@ -15,11 +15,11 @@ public class BirdStart : MonoBehaviour
     /// Starts birds when player leaves
     /// </summary>
     /// <param name="other">Object exiting the trigger</param>
-    private void OnTriggerExit(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            //bird.GetComponent<BirdFlyoverBehaviour>().startFlight = true;
+            bird.GetComponent<BirdFlyoverBehaviour>().startFlight = true;
         }
     }
 }
