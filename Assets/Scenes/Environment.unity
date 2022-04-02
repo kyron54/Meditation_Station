@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1085239, g: 0.2710591, b: 0.61126363, a: 1}
+  m_IndirectSpecularColor: {r: 0.108524494, g: 0.27106038, b: 0.6112654, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -814,8 +814,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 34312182}
   m_LocalRotation: {x: 0, y: 0.5, z: 0, w: 0.8660254}
-  m_LocalPosition: {x: 86.285, y: 5.71, z: 71.976}
-  m_LocalScale: {x: 16, y: 20, z: 1}
+  m_LocalPosition: {x: 89.26, y: 5.71, z: 66.82}
+  m_LocalScale: {x: 52.16, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 63
@@ -22981,6 +22981,10 @@ PrefabInstance:
       propertyPath: waypoints.Array.data[4]
       value: 
       objectReference: {fileID: 1525393992}
+    - target: {fileID: 7319536349554078199, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
+      propertyPath: m_Constraints
+      value: 112
+      objectReference: {fileID: 0}
     - target: {fileID: 7590076472203136185, guid: 11e0e1381a432a34b9033fefe5331a78, type: 3}
       propertyPath: m_Name
       value: Dog_w-o_bulgingEyes
