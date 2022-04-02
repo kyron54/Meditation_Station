@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 1707727514458264120}
   - component: {fileID: 3483506177762060018}
   - component: {fileID: -8445994413988927942}
+  - component: {fileID: 5708482443616601330}
   m_Layer: 0
   m_Name: stump_plantcombo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 20
   m_IsActive: 1
 --- !u!4 &2313947187945217437
 Transform:
@@ -95,3 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.618883, y: 2.244016, z: 4.3128448}
   m_Center: {x: -0.39856574, y: 0.9619252, z: 0.10800054}
+--- !u!205 &5708482443616601330
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3122993564448802599}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.24660373, y: 0.961925, z: 0.108000755}
+  m_Size: 5.503298
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09684146
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 3483506177762060018}
+  m_Enabled: 1

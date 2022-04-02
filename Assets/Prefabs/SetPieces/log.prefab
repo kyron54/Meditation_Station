@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 5304214875893447475}
   - component: {fileID: 7960301570319994873}
   - component: {fileID: -662264561903447330}
+  - component: {fileID: 2085152675886103499}
   m_Layer: 0
   m_Name: log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 20
   m_IsActive: 1
 --- !u!4 &9093753664374813846
 Transform:
@@ -96,3 +97,22 @@ CapsuleCollider:
   m_Height: 2.9147327
   m_Direction: 0
   m_Center: {x: -5.834476e-10, y: 0.22, z: -0.07}
+--- !u!205 &2085152675886103499
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8464603917941468716}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.015912414, y: 0.29301608, z: 0.0021986365}
+  m_Size: 2.4170468
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09536463
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7960301570319994873}
+  m_Enabled: 1

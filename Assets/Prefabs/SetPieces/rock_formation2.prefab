@@ -12,12 +12,13 @@ GameObject:
   - component: {fileID: 7307631012419631169}
   - component: {fileID: 4795521037732580491}
   - component: {fileID: 7411255350816550620}
+  - component: {fileID: 8111660848136208845}
   m_Layer: 0
   m_Name: rock_formation2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 20
   m_IsActive: 1
 --- !u!4 &5964507693898627044
 Transform:
@@ -95,3 +96,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.6945472, y: 3.816327, z: 3.362486}
   m_Center: {x: -0.14827043, y: 1.8998964, z: 0.05423069}
+--- !u!205 &8111660848136208845
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6453060724005088606}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.14827037, y: 1.8998964, z: 0.05423069}
+  m_Size: 3.816327
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.09832953
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4795521037732580491}
+  m_Enabled: 1

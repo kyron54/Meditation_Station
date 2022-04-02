@@ -11,12 +11,13 @@ GameObject:
   - component: {fileID: 7299981536436893648}
   - component: {fileID: 5972165711206037621}
   - component: {fileID: 8432306798574488767}
+  - component: {fileID: -4158028473081054568}
   m_Layer: 0
   m_Name: plant_combo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 20
   m_IsActive: 1
 --- !u!4 &7299981536436893648
 Transform:
@@ -81,3 +82,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!205 &-4158028473081054568
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927863851369590122}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.27644873, y: 4.444746, z: -0.6684003}
+  m_Size: 12.214165
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.05075086
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8432306798574488767}
+  m_Enabled: 1
