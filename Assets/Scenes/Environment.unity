@@ -16983,14 +16983,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 741870744}
   serializedVersion: 7
-  lengthInSec: 5
+  lengthInSec: 4
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 1
-  prewarm: 0
+  prewarm: 1
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -17111,7 +17111,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -17543,7 +17543,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    maxNumParticles: 1000
+    maxNumParticles: 25
     size3D: 0
     rotation3D: 0
     gravityModifier:
@@ -18246,8 +18246,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 0.9764706, b: 0.7294118, a: 0.078431375}
-        key1: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 1, g: 0.9764706, b: 0.7294118, a: 0}
+        key1: {r: 1, g: 1, b: 1, a: 0.078431375}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -18263,7 +18263,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
+        atime1: 32768
         atime2: 65535
         atime3: 0
         atime4: 0
@@ -18272,7 +18272,7 @@ ParticleSystem:
         atime7: 0
         m_Mode: 0
         m_NumColorKeys: 2
-        m_NumAlphaKeys: 2
+        m_NumAlphaKeys: 3
       minGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -42260,7 +42260,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 2100000, guid: 594ea882c5a793440b60ff72d896021e, type: 2}
+  m_MaterialTemplate: {fileID: 2100000, guid: f4e2f8da355b4f1438203b66a33394c8, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -45362,7 +45362,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4245240146075261966, guid: 17e4ea127d2e6674aafdaddbff8aa239, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.6009998
+      value: -1.404
       objectReference: {fileID: 0}
     - target: {fileID: 4245240146075261966, guid: 17e4ea127d2e6674aafdaddbff8aa239, type: 3}
       propertyPath: m_LocalPosition.z
