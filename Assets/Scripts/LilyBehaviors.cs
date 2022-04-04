@@ -14,11 +14,6 @@ public class LilyBehaviors : MonoBehaviour
     public int rotationSpeed;
 
     private bool reachedDestination = true;
-    private bool stopRotate = false;
-    private bool restartRotateFinish = false;
-
-    public float minPauseTime = 10f;
-    public float maxPauseTime = 30f;
 
     private void Awake()
     {
@@ -32,49 +27,13 @@ public class LilyBehaviors : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!stopRotate)
-        {
-            Rotate(rotationDecider);
-        }
-
-        if(!restartRotateFinish)
-        {
-            StartCoroutine(RestartRotate());
-            restartRotateFinish = true;
-        }
+        Rotate(rotationDecider);
 
         if(reachedDestination)
         {
             reachedDestination = false;
             StartCoroutine(RandomMove());
         }
-    }
-
-    void Rotate(int decider)
-    {
-        if(rotationDecider == 0)
-        {
-            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime,
-                Space.Self);
-        }
-        else
-        {
-            transform.Rotate(Vector3.down * rotationSpeed * Time.deltaTime,
-                Space.Self);
-        }
-    }
-
-    IEnumerator RestartRotate()
-    {
-        yield return new WaitForSeconds(Random.Range(minPauseTime, maxPauseTime));
-
-        stopRotate = true;
-
-        yield return new WaitForSeconds(Random.Range(minPauseTime, maxPauseTime));
-
-        rotationDecider = Random.Range(0, 2);
-        stopRotate = false;
-        restartRotateFinish = false;
     }
 
     IEnumerator RandomMove()
@@ -91,5 +50,19 @@ public class LilyBehaviors : MonoBehaviour
         reachedDestination = true;
 
         yield return null;
+    }
+
+    void Rotate(int decider)
+    {
+        if(rotationDecider == 0)
+        {
+            transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime,
+                Space.Self);
+        }
+        else
+        {
+            transform.Rotate(Vector3.down * rotationSpeed * Time.deltaTime,
+                Space.Self);
+        }
     }
 }
