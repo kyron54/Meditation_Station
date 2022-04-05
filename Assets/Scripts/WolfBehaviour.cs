@@ -74,6 +74,7 @@ public class WolfBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
+            anim.SetBool("shouldWag", false);
         }
     }
 
@@ -82,6 +83,7 @@ public class WolfBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", false);
+            anim.SetBool("shouldWag", true);
         }
     }
 
