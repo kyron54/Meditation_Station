@@ -3483,12 +3483,6 @@ MonoBehaviour:
   numofWaypoints: 0
   resetTime: 10
   waypointtoStop: 0
-  pinkFruit1: {fileID: 0}
-  pinkFruit2: {fileID: 0}
-  pinkFruit3: {fileID: 0}
-  pinkFruit4: {fileID: 0}
-  pinkFruit5: {fileID: 0}
-  pinkFruit6: {fileID: 0}
 --- !u!1 &4444290352744845985
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,7 +5953,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 1792539558728417982, guid: 0ce44765fcb159a408998fb71141f32a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
