@@ -10,7 +10,7 @@ public class TurnOnMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = true;
     }
 
     // Update is called once per frame
@@ -18,8 +18,8 @@ public class TurnOnMovement : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.M))
         {
-            bm.enabled = true;
-            Cursor.visible = false;
+            bm.enabled = !bm.enabled;
+            Cursor.visible = !Cursor.visible;
         }
     }
 }
