@@ -19,6 +19,7 @@ public class TurnOnMovement : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.M))
         {
             bm.enabled = true;
+            Cursor.visible = false;
         }
     }
 }
