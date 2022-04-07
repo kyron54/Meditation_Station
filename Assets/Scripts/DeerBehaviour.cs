@@ -57,12 +57,21 @@ public class DeerBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
+            anim.SetBool("isEating", false);
         }
 
         if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", true);
             
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.gameObject.CompareTag("Hand"))
+        {
+            anim.SetBool("isPet", true);
         }
     }
 
