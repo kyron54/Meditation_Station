@@ -12,10 +12,16 @@ public class BoatActBehaviour : MonoBehaviour
 
     private bool stopMovement;
 
+    private bool isinWater;
+
+    private float upWardForce = 5;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         stopMovement = false;
+
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -36,10 +42,17 @@ public class BoatActBehaviour : MonoBehaviour
                 currentWaypoint = 0;
             }
         }
+        if(isinWater)
+        {
+            transform.position = Vector3.MoveTowards(transform.position,
+                          waypoints[currentWaypoint].transform.position, Time.deltaTime
+                          * Speed);
 
-        transform.position = Vector3.MoveTowards(transform.position,
-              waypoints[currentWaypoint].transform.position, Time.deltaTime
-              * Speed);
+            Vector3 force = transform.up * upWardForce;
+
+            this.rb.AddRelativeForce(force);
+        }
+        
        /* if(transform.position == waypoints[4].transform.position)
         {
             transform.position = waypoints[4].transform.position;
@@ -62,7 +75,7 @@ public class BoatActBehaviour : MonoBehaviour
             && !stopMovement)
         {
             Movement();
-
+            isinWater = true;
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
