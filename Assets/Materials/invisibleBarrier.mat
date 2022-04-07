@@ -49,7 +49,7 @@ Material:
     - _StencilWriteMask: 255
     - _Strength: 0.2
     - _UseUIAlphaClip: 0
-    - _offset: -50
+    - _offset: -100
     - fill: 1.53
     - offsetSpread: 6.95
     m_Colors:

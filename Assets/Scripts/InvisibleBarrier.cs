@@ -52,7 +52,7 @@ public class InvisibleBarrier : MonoBehaviour
                 gameObject.GetComponent<Renderer>().material.SetFloat("_offset", i);
                 yield return new WaitForSeconds(fadeSpeed);
             }
-            GetComponent<Renderer>().material.SetFloat("_offset", -50);
+            GetComponent<Renderer>().material.SetFloat("_offset", -100);
             fadingIn = true;
         }
     }
