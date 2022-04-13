@@ -15,6 +15,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
     public float rotSpeed = 5;
 
     private Vector3 currentPosition;
+
+    public bool arrived;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,17 +27,19 @@ public class GuidedDeerBehaviour : MonoBehaviour
     void Update()
     {
         if(Vector3.Distance(transform.position, player.transform.position)
-            < 3.0f)
+            < 10.0f && arrived == false)
         {
             shouldMove = true;
         }
         else if(Vector3.Distance(transform.position, player.transform.position)
-            > 3.0f)
+            > 10.0f)
         {
             shouldMove = false;
         }
 
-        currentPosition = transform.position;
+        
+
+        GuidedMovement();
     }
 
     public void GuidedMovement()
@@ -51,6 +55,17 @@ public class GuidedDeerBehaviour : MonoBehaviour
 
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(lookAt),
                 rotSpeed * Time.deltaTime);
+
+            
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.name == "Guided Deer Waypoint")
+        {
+            shouldMove = false;
+            arrived = true;
         }
     }
 }
