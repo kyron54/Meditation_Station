@@ -12,7 +12,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
     public GameObject[] guidedWaypoints;
     public int currentWaypoint = 0;
     public int currentWaypoint1;
-    public float speed = 3;
+    public float guidedSpeed = 3;
     public float rotSpeed = 5;
 
     private Vector3 currentPosition;
@@ -73,7 +73,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position,
                 guidedWaypoints[currentWaypoint1].transform.position, Time.deltaTime
-                * speed);
+                * guidedSpeed);
             anim.SetBool("isWalking", true);
             Vector3 lookAt = guidedWaypoints[currentWaypoint1].transform.position
                 - this.transform.position;
