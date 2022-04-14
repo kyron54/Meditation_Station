@@ -3477,7 +3477,7 @@ MonoBehaviour:
   - {fileID: 0}
   waypointRadius: 1
   player: {fileID: 0}
-  Speed: 1
+  Speed: 1.4
   rotSpeed: 7
   degreesPerSecond: 0
   numofWaypoints: 0
