@@ -66,13 +66,17 @@ public class BoatActBehaviour : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-
+        if(collision.gameObject.name.Contains("water") && 
+            stopMovement == false)
+        {
+            isinWater = true;
+        }
     }
 
     private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.name.Contains("water")
-            && !stopMovement)
+            && stopMovement == false)
         {
             Movement();
             isinWater = true;
