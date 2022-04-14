@@ -56557,11 +56557,22 @@ MonoBehaviour:
   shouldMove: 0
   player: {fileID: 1088412131}
   waypoints:
+  - {fileID: 1009912469}
+  - {fileID: 686411062}
+  - {fileID: 841016674}
+  - {fileID: 770363724}
+  guidedWaypoints:
   - {fileID: 656692757}
   currentWaypoint: 0
-  speed: 3
+  currentWaypoint1: 0
+  speed: 1
   rotSpeed: 5
   arrived: 0
+  numofWaypoints: 0
+  resetTime: 10
+  waypointtoStop: 0
+  waypointRadius: 1
+  Speed: 1
 --- !u!1001 &1462607567
 PrefabInstance:
   m_ObjectHideFlags: 0
