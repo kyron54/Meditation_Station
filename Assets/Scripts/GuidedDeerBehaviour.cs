@@ -52,7 +52,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
         }
 
-        if(arrived == true)
+        if(arrived == true && Vector3.Distance(transform.position,
+            player.transform.position) > 3.0f)
         {
             PathWayMovement();
         }
