@@ -86,7 +86,7 @@ ModelImporter:
     legStretch: 0.05
     feetSpacing: 0
     globalScale: 1
-    rootMotionBoneName: body_base_1
+    rootMotionBoneName: Character
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
