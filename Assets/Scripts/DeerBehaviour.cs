@@ -31,6 +31,7 @@ public class DeerBehaviour : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        
     }
 
     // Update is called once per frame
@@ -66,6 +67,11 @@ public class DeerBehaviour : MonoBehaviour
         {
             anim.SetBool("isEating", true);
             
+        }
+
+       if(other.tag == "Fruit")
+        {
+            anim.SetBool("isSniffing", true);
         }
     }
 
