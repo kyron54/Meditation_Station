@@ -50,8 +50,7 @@ public class DeerBehaviour : MonoBehaviour
            
         }
 
-       
-
+      
     }
 
     private void OnTriggerEnter(Collider other)
