@@ -30,7 +30,17 @@ ModelImporter:
   - first:
       74: 2667949614841947897
     second: Walk
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mat.5
+    second: {fileID: 2100000, guid: 245f253b46718d946a8315160c3d403f, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: DeerMedits
+    second: {fileID: 2800000, guid: 283caf5d93881344a9e5defce595f01c, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

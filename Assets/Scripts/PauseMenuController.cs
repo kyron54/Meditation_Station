@@ -6,21 +6,23 @@ using UnityEngine.SceneManagement;
 public class PauseMenuController : MonoBehaviour
 {
     public bool pressPause = false;
+    PauseMenuManager pauseManager;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        pauseManager = GetComponent<PauseMenuManager>();
     }
 
     private void Update()
     {
-        ButtonResume();
+
     }
 
     public void Resume()
     {
-        pressPause = true;
+        pauseManager.pauseOn = !pauseManager.pauseOn;
+        //pressPause = !pressPause;
     }
 
     public void Restart()
@@ -31,17 +33,5 @@ public class PauseMenuController : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }
-
-    private void ButtonResume()
-    {
-        if (OVRInput.GetDown(OVRInput.Button.Start) || Input.GetKeyDown(KeyCode.C))
-        {
-            pressPause = true;
-        }
-        else
-        {
-            pressPause = false;
-        }
     }
 }

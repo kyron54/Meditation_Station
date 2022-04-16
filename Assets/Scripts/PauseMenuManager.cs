@@ -7,7 +7,7 @@ public class PauseMenuManager : MonoBehaviour
 {
     public GameObject pauseMenu;
 
-    private bool pauseOn = false;
+    public bool pauseOn = false;
 
     // Start is called before the first frame update
     void Start()
@@ -18,9 +18,11 @@ public class PauseMenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(OVRInput.GetDown(OVRInput.Button.Start))
+        if(OVRInput.GetDown(OVRInput.Button.Start) || Input.GetKeyDown(KeyCode.C))
         {
-            pauseMenu.SetActive(!pauseOn);
+            pauseOn = !pauseOn;
         }
+
+        pauseMenu.SetActive(pauseOn);
     }
 }
