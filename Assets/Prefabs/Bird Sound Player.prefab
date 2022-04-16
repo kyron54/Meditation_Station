@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7510422723636206191}
   - component: {fileID: 427969103263204294}
+  - component: {fileID: 4327044435405814725}
   m_Layer: 0
   m_Name: Bird Sound Player
   m_TagString: Untagged
@@ -40,10 +41,10 @@ AudioSource:
   m_GameObject: {fileID: 2182020007430527826}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -127,3 +128,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4327044435405814725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2182020007430527826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0695e88eec03142f89987f172c966501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: be952d59d9f7e4f18b5fad81efe07baf, type: 3}
+  - {fileID: 8300000, guid: 9bb193dc7726b49859d24957b831ddae, type: 3}
+  - {fileID: 8300000, guid: 4b8b3cb844493481f9b85a4f8b52bb33, type: 3}
+  minDownTime: 30
+  maxDownTime: 45

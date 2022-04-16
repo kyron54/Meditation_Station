@@ -6,14 +6,14 @@ public class EnvironmentSFXBase : MonoBehaviour
 {
     public AudioClip[] sounds;
 
-    public AudioSource soundSource;
+    protected AudioSource soundSource;
 
     public float minDownTime;
     public float maxDownTime;
 
-    protected int soundDecider = 0;
+    protected int soundDecider = -1;
 
-    protected bool shouldAudioRestart = true;
+    protected bool shouldAudioRestart = false;
 
     protected IEnumerator PlaySound()
     {
@@ -24,16 +24,19 @@ public class EnvironmentSFXBase : MonoBehaviour
         shouldAudioRestart = true;
     }
 
+    protected IEnumerator InitialDelay()
+    {
+        yield return new WaitForSeconds(Random.Range(0, minDownTime));
+        shouldAudioRestart = true;
+    }
+
     protected void DecideSound()
     {
-        if(soundDecider == 0)
+        if(soundDecider == -1)
         {
-            soundDecider = Random.Range(0, sounds.Length - 1);
+            soundDecider = Random.Range(0, sounds.Length);
         }
 
-        for(int i = 0; soundDecider == i + 1; ++i)
-        {
-            soundSource.clip = sounds[i];
-        }
+        soundSource.clip = sounds[soundDecider];
     }
 }
