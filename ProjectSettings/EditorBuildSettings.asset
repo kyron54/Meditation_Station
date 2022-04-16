@@ -5,13 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Main Menu.unity
     guid: 99ffd8b634fa15e48bdcaf4f2915586c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/How To.unity
     guid: b7e6329a911ae2143ad03e7098911053
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Environment.unity
     guid: 8943a7782beaf434882ac688776f74d7
   - enabled: 0
@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Kadin(3) Scene.unity
     guid: 283ff73e43dc4b243a94e47b35e25f26
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Kadin(4) Scene.unity
     guid: f2b39be9ac57b2e4b8a94d02a90f02a5
   m_configObjects:

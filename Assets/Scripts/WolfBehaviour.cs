@@ -76,6 +76,12 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("isPet", true);
             anim.SetBool("shouldWag", false);
         }
+
+        if (other.gameObject.name.Contains("Pink Fruit"))
+        {
+            anim.SetBool("shouldEat", true);
+
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -84,6 +90,12 @@ public class WolfBehaviour : MonoBehaviour
         {
             anim.SetBool("isPet", false);
             anim.SetBool("shouldWag", true);
+        }
+
+        if (other.gameObject.name.Contains("Pink Fruit"))
+        {
+            anim.SetBool("shouldEat", false);
+
         }
     }
 
