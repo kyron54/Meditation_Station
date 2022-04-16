@@ -6,6 +6,7 @@ public class DeerBehaviour : MonoBehaviour
 {
 
     public GameObject[] waypoints;
+    private GameObject[] fruits;
     int currentWaypoint = 0;
     public float waypointRadius;
 
@@ -48,6 +49,8 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
            
         }
+
+        
 
     }
 
