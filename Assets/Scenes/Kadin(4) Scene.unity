@@ -60273,7 +60273,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dc500eacc51f9c429f8bf8e92d9634e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.997
+      value: 4.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7dc500eacc51f9c429f8bf8e92d9634e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -60384,6 +60384,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1594511711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594511706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b22617475aa0ab4c87e5b03e1bb79db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 569803656}
+  - {fileID: 301607315}
+  - {fileID: 655350373}
+  - {fileID: 2124851525}
+  - {fileID: 1597523582}
+  waypointRadius: 1
+  player: {fileID: 1088412131}
+  Speed: 1.5
+  rotSpeed: 5
+  degreesPerSecond: 0
+  numofWaypoints: 0
+  resetTime: 10
+  waypointtoStop: 0
 --- !u!1001 &1597164636
 PrefabInstance:
   m_ObjectHideFlags: 0
