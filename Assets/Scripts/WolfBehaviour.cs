@@ -66,7 +66,12 @@ public class WolfBehaviour : MonoBehaviour
         numofWaypoints = 0;
     }
 
+    IEnumerator NotEating()
+    {
+        yield return new WaitForSeconds(3.0f);
 
+        anim.SetBool("shouldEat", false);
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -80,7 +85,7 @@ public class WolfBehaviour : MonoBehaviour
         if (other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("shouldEat", true);
-
+            StartCoroutine(NotEating());
         }
     }
 
