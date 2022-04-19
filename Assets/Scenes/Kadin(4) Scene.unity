@@ -20510,7 +20510,7 @@ GameObject:
   - component: {fileID: 574457247}
   - component: {fileID: 574457248}
   - component: {fileID: 574457249}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DeerF Sniff Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55324,7 +55324,7 @@ GameObject:
   - component: {fileID: 1397251075}
   - component: {fileID: 1397251076}
   - component: {fileID: 1397251077}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: DeerF Mouth
   m_TagString: Animal Mouth
   m_Icon: {fileID: 0}

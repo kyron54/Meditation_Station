@@ -59,7 +59,7 @@ public class DeerBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isWalking", false);
-           // anim.SetBool("isPet", true);
+            anim.SetBool("isPet", true);
           //  anim.SetBool("isEating", false);
         }
 
@@ -74,21 +74,21 @@ public class DeerBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-       /* if(other.gameObject.CompareTag("Hand"))
+        if(other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", true);
         }
 
-        */
+        
     }
 
     private void OnTriggerExit(Collider other)
     {
-      /*  if (other.gameObject.CompareTag("Hand"))
+        if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", false);
         }
-      */
+      
        /* if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", false);
