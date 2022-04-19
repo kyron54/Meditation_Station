@@ -23,6 +23,7 @@ public class DeerMouthBehaviour : MonoBehaviour
         {
             anim.SetBool("isEating", true);
             anim.SetBool("isSniffing", false);
+            StartCoroutine(NotEatingorSniffing());
         }
     }
 
@@ -31,7 +32,16 @@ public class DeerMouthBehaviour : MonoBehaviour
         if (other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", false);
-          //  anim.SetBool("isWalking", true);
+            //  anim.SetBool("isWalking", true);
+            anim.SetBool("isSniffing", false);
+           
         }
+    }
+
+    IEnumerator NotEatingorSniffing()
+    {
+        yield return new WaitForSeconds(2.0f);
+        anim.SetBool("isEating", false);
+        anim.SetBool("isSniffing", false);
     }
 }
