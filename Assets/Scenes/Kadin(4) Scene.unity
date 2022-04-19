@@ -20542,8 +20542,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.37001532
-  m_Center: {x: 0, y: -0.23530072, z: 0.10531604}
+  m_Radius: 0.41966504
+  m_Center: {x: 0, y: -0.23530072, z: 0.1549657}
 --- !u!114 &574457249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29426,6 +29426,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ccedbab54de9db84890847606a5d923b, type: 3}
   m_PrefabInstance: {fileID: 749726507}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &749726513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 749726509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfd2df1ecdda19342858dc4a1d6002bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &749726515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -55311,6 +55323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1397251075}
   - component: {fileID: 1397251076}
+  - component: {fileID: 1397251077}
   m_Layer: 0
   m_Name: DeerF Mouth
   m_TagString: Animal Mouth
@@ -55326,7 +55339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1397251074}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 1.924, z: 1.241}
+  m_LocalPosition: {x: -0, y: 1.924, z: 1.335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 749726512}
@@ -55343,8 +55356,20 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.08127904
-  m_Center: {x: 0, y: -0.41872096, z: 0}
+  m_Radius: 0.12961048
+  m_Center: {x: 0, y: -0.4226913, z: 0.052301764}
+--- !u!114 &1397251077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1397251074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5a5b24b4e6e6744bf5457bdc229fe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1397571365
 PrefabInstance:
   m_ObjectHideFlags: 0

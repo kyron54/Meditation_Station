@@ -59,39 +59,42 @@ public class DeerBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isWalking", false);
-            anim.SetBool("isPet", true);
-            anim.SetBool("isEating", false);
+           // anim.SetBool("isPet", true);
+          //  anim.SetBool("isEating", false);
         }
 
-        if(other.gameObject.name.Contains("Pink Fruit"))
+       /* if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", true);
             
         }
-
+       */
       
     }
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.CompareTag("Hand"))
+       /* if(other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", true);
         }
+
+        */
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Hand"))
+      /*  if (other.gameObject.CompareTag("Hand"))
         {
             anim.SetBool("isPet", false);
         }
-
-        if(other.gameObject.name.Contains("Pink Fruit"))
+      */
+       /* if(other.gameObject.name.Contains("Pink Fruit"))
         {
             anim.SetBool("isEating", false);
             anim.SetBool("isWalking", true);
         }
+       */
     }
 
     IEnumerator StartReset()
