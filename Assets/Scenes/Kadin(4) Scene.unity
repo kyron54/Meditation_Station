@@ -20509,6 +20509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 574457247}
   - component: {fileID: 574457248}
+  - component: {fileID: 574457249}
   m_Layer: 0
   m_Name: DeerF Sniff Range
   m_TagString: Untagged
@@ -20543,6 +20544,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.37001532
   m_Center: {x: 0, y: -0.23530072, z: 0.10531604}
+--- !u!114 &574457249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574457246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 862e5801a7c61a847ac09eb2cb731548, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &576757928
 PrefabInstance:
   m_ObjectHideFlags: 0

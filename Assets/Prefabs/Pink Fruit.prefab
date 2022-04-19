@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 8184872365504419450}
   - component: {fileID: 8184872365504419452}
   - component: {fileID: 8184872365504419453}
-  - component: {fileID: 2606993776645502827}
   m_Layer: 0
   m_Name: Pink Fruit
   m_TagString: Fruit
@@ -145,19 +144,6 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
---- !u!65 &2606993776645502827
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9031946911896070959}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.3, z: 0.3}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &7042138633218714951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -240,8 +226,26 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 5752599789884771420, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+--- !u!1 &3127075685392746462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5395075968146008729, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+  m_PrefabInstance: {fileID: 7042138633218714951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3127075685392746449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5395075968146008726, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
   m_PrefabInstance: {fileID: 7042138633218714951}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1697984755241282931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3127075685392746462}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3, y: 0.3, z: 0.3}
+  m_Center: {x: 0, y: 0, z: 0}

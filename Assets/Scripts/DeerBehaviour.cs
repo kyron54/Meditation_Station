@@ -69,10 +69,7 @@ public class DeerBehaviour : MonoBehaviour
             
         }
 
-       if(other.tag == "Fruit")
-        {
-            anim.SetBool("isSniffing", true);
-        }
+      
     }
 
     private void OnTriggerStay(Collider other)
