@@ -70,7 +70,7 @@ public class WolfBehaviour : MonoBehaviour
     {
         yield return new WaitForSeconds(3.0f);
 
-        anim.SetBool("shouldEat", false);
+        anim.SetBool("isEating", false);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -82,11 +82,12 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("shouldWag", false);
         }
 
-        if (other.gameObject.name.Contains("Pink Fruit"))
+       /* if (other.gameObject.name.Contains("Pink Fruit"))
         {
-            anim.SetBool("shouldEat", true);
+            anim.SetBool("isEating", true);
             StartCoroutine(NotEating());
         }
+       */
     }
 
     private void OnTriggerExit(Collider other)
@@ -97,11 +98,12 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("shouldWag", true);
         }
 
-        if (other.gameObject.name.Contains("Pink Fruit"))
+       /* if (other.gameObject.name.Contains("Pink Fruit"))
         {
-            anim.SetBool("shouldEat", false);
+            anim.SetBool("isEating", false);
 
         }
+       */
     }
 
   

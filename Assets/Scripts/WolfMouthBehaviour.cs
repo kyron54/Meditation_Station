@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeerMouthBehaviour : MonoBehaviour
+public class WolfMouthBehaviour : MonoBehaviour
 {
     private Animator anim;
-    public float resetTime = 3.0f;
+
+    public float resetTime = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +16,7 @@ public class DeerMouthBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,7 +36,7 @@ public class DeerMouthBehaviour : MonoBehaviour
             anim.SetBool("isEating", false);
             //  anim.SetBool("isWalking", true);
             anim.SetBool("isSniffing", false);
-           
+
         }
     }
 
