@@ -28999,7 +28999,7 @@ GameObject:
   - component: {fileID: 728629012}
   - component: {fileID: 728629011}
   m_Layer: 9
-  m_Name: DeerF Mouth (1)
+  m_Name: 'DeerM Mouth '
   m_TagString: Animal Mouth
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29013,7 +29013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728629009}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.002998352, y: 2.059, z: 1.2180023}
+  m_LocalPosition: {x: -0.002998352, y: 2.059, z: 1.271}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007175065}
@@ -29031,7 +29031,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe5a5b24b4e6e6744bf5457bdc229fe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resetTime: 3
+  resetTime: 4
 --- !u!135 &728629012
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57773,7 +57773,7 @@ GameObject:
   - component: {fileID: 1503437035}
   - component: {fileID: 1503437034}
   m_Layer: 9
-  m_Name: DeerF Sniff Range (1)
+  m_Name: DeerM Sniff Range
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -57787,7 +57787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1503437032}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.003, y: 1.905, z: 1.218}
+  m_LocalPosition: {x: -0.003, y: 1.905, z: 1.2710015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2007175065}

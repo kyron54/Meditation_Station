@@ -167,12 +167,12 @@ public class GuidedDeerBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
-            anim.SetBool("isEating", false);
+           // anim.SetBool("isEating", false);
         }
 
         if (other.gameObject.name.Contains("Pink Fruit"))
         {
-            anim.SetBool("isEating", true);
+           // anim.SetBool("isEating", true);
 
         }
     }
@@ -194,7 +194,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
 
         if (other.gameObject.name.Contains("Pink Fruit"))
         {
-            anim.SetBool("isEating", false);
+           // anim.SetBool("isEating", false);
             anim.SetBool("isWalking", true);
         }
     }
