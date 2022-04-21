@@ -25,12 +25,12 @@ public class SquirrelBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(numofWaypoints <= 2)
+        if(numofWaypoints <= 4)
         {
             Movement();
             
         }
-       if(numofWaypoints >2)
+       if(numofWaypoints >4)
         {
             anim.speed = 0;
         }
@@ -44,12 +44,13 @@ public class SquirrelBehaviour : MonoBehaviour
             numofWaypoints++;
             //currentWaypoint = Random.Range(0, waypoints.Length);
             currentWaypoint++;
-            waypointtoStop = Random.Range(1, 10);
+            waypointtoStop = 4;
 
             // currentWaypoint++;
             if (currentWaypoint >= waypoints.Length)
             {
-                currentWaypoint = 0;
+                 currentWaypoint = 0;
+                
             }
         }
 
