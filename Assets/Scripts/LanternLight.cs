@@ -16,6 +16,12 @@ public class LanternLight : MonoBehaviour
     [SerializeField] private float rate;
     [SerializeField] private float finalIntensity;
 
+    //Gabriel: Adding to this file to play lantern sounds.
+    [SerializeField] private AudioClip[] sounds;
+    [SerializeField] private AudioSource soundSource;
+
+    public int soundDecider = -1;
+
     Light light;
     ParticleSystem particles;
 
@@ -24,6 +30,8 @@ public class LanternLight : MonoBehaviour
         // Get the lantern's light and particle system
         light = gameObject.transform.GetChild(0).GetComponent<Light>();
         particles = gameObject.transform.GetChild(1).GetComponent<ParticleSystem>();
+
+        DecideSound();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +48,7 @@ public class LanternLight : MonoBehaviour
             particles.Play();
 
             // This would be a good place to play the sound effect too
+            soundSource.Play();
         }
     }
 
@@ -55,5 +64,15 @@ public class LanternLight : MonoBehaviour
             yield return new WaitForSecondsRealtime(fadeSeconds);
         }
  
+    }
+
+    private void DecideSound()
+    {
+        if (soundDecider == -1)
+        {
+            soundDecider = Random.Range(0, sounds.Length);
+        }
+
+        soundSource.clip = sounds[soundDecider];
     }
 }
