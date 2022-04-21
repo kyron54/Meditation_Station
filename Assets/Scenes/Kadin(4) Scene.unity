@@ -55443,6 +55443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat Waypoint (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6727420545611854012, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -56483,7 +56487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ac7776fe9395e54abd96c94f845e499, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 81.54
+      value: 83.11
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5ac7776fe9395e54abd96c94f845e499, type: 3}
       propertyPath: m_LocalPosition.y

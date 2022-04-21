@@ -14,10 +14,12 @@ public class SquirrelBehaviour : MonoBehaviour
 
     public float Speed = 3;
     public float rotSpeed;
+
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -26,8 +28,12 @@ public class SquirrelBehaviour : MonoBehaviour
         if(numofWaypoints <= 2)
         {
             Movement();
+            
         }
-       
+       if(numofWaypoints >2)
+        {
+            anim.speed = 0;
+        }
     }
 
     public void Movement()
