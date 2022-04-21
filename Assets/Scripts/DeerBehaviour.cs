@@ -154,7 +154,7 @@ public class DeerBehaviour : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
-        rb.constraints = RigidbodyConstraints.FreezeRotationZ;
+       
 
 
         // transform.LookAt(waypoints[currentWaypoint].transform.position);

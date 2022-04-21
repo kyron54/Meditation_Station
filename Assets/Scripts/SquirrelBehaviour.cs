@@ -16,6 +16,8 @@ public class SquirrelBehaviour : MonoBehaviour
     public float rotSpeed;
 
     private Animator anim;
+
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +27,8 @@ public class SquirrelBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(numofWaypoints <= 4)
+        if(numofWaypoints <= 4 && Vector3.Distance(transform.position,
+            player.transform.position) <= 10.0f)
         {
             Movement();
             
@@ -33,6 +36,7 @@ public class SquirrelBehaviour : MonoBehaviour
        if(numofWaypoints >4)
         {
             anim.speed = 0;
+            this.gameObject.SetActive(false);
         }
     }
 
