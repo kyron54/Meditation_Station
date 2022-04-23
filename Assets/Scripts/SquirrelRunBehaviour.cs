@@ -50,7 +50,7 @@ public class SquirrelRunBehaviour : MonoBehaviour
             numofWaypoints++;
             currentWaypoint = Random.Range(0, waypoints.Length);
             
-            waypointtoStop = Random.Range(1,16);
+            waypointtoStop = Random.Range(1, 5);
 
             // currentWaypoint++;
             if (currentWaypoint >= waypoints.Length)
