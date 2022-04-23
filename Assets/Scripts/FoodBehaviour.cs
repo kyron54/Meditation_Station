@@ -68,7 +68,12 @@ public class FoodBehaviour : MonoBehaviour
 
         if (other.gameObject.CompareTag("Animal Mouth"))
         {
+
             Destroy(gameObject);
+
+           // gameObject.GetComponent<EnableFoodGrabBehaviour>().DestroyThis();
+
+            
         }
     }
 

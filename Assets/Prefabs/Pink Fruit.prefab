@@ -144,6 +144,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!1001 &7042138633218714951
 PrefabInstance:
   m_ObjectHideFlags: 0

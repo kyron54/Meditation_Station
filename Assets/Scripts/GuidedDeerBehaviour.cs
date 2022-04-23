@@ -112,6 +112,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
 
                 anim.SetBool("isWalking", true);
                 anim.SetBool("isEating", false);
+                anim.SetBool("isPet", false);
                 rotSpeed = Speed * Random.Range(1f, 1.1f);
 
                 Vector3 lookAt = waypoints[currentWaypoint].transform.position

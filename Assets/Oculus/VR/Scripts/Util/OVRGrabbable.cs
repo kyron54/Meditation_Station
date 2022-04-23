@@ -31,7 +31,8 @@ public class OVRGrabbable : MonoBehaviour
 
     protected bool m_grabbedKinematic = false;
     protected Collider m_grabbedCollider = null;
-    protected OVRGrabber m_grabbedBy = null;
+    [HideInInspector]
+    public  OVRGrabber m_grabbedBy = null;
 
 	/// <summary>
 	/// If true, the object can currently be grabbed.
