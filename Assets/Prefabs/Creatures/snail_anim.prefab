@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5803435731236322859}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: move_null
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 3203207806249462830}
   - component: {fileID: 5262130962403139742}
   - component: {fileID: 8534647165103668752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CINEMA_4D_Editor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,7 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1899786882775431723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Master_Ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -180,7 +180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6010344528607237466}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SpineJoint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -210,7 +210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8353674695414159573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine_Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +241,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159923524637435164}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: OffsetNull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -273,7 +273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7020728322557251641}
   - component: {fileID: 8802870949666410693}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: snail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 112150830502940224}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Torso_Ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7098769631704118238}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Deformers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -424,7 +424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2541262124310167766}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Torso_Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5394546413186964292}
   - component: {fileID: -2050784406465612893}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: snail_anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -511,7 +511,7 @@ GameObject:
   - component: {fileID: 1129953214807664413}
   - component: {fileID: 6431360749024094207}
   - component: {fileID: 4898502815322262530}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -590,7 +590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7405798393355740952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Geo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -622,7 +622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2331769756403818158}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Torso_Joint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +652,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7408064793805060101}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Belly_Joint_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -683,7 +683,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1757689021878710567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Belly_Joint_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -713,7 +713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8859362546485835576}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Spine_Ctrl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
