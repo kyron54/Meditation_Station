@@ -41,6 +41,6 @@ public class HarpTrigger : MonoBehaviour
             soundDecider = Random.Range(0, sounds.Length - 1);
         }
 
-        soundSource.clip = sounds[soundDecider];
+        soundSource.clip = sounds[Random.Range(0, sounds.Length)];
     }
 }
