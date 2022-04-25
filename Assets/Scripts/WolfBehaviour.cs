@@ -22,11 +22,19 @@ public class WolfBehaviour : MonoBehaviour
 
     private Animator anim;
     public int waypointtoStop;
+
+    private AudioSource walkSoundSource;
+    private AudioSource sniffSoundSource;
     
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        walkSoundSource = gameObject.transform.GetChild(5).
+            GetComponent<AudioSource>();
+        sniffSoundSource = gameObject.transform.GetChild(6).
+            GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -80,6 +88,8 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
             anim.SetBool("shouldWag", false);
+
+            sniffSoundSource.Play();
         }
 
        /* if (other.gameObject.name.Contains("Pink Fruit"))
@@ -138,6 +148,9 @@ public class WolfBehaviour : MonoBehaviour
             //  anim.SetBool("shouldWag", false);
             anim.SetBool("shouldWag", false);
             anim.SetBool("isPet", false);
+
+            walkSoundSource.Play();
+
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
             Vector3 lookAt = waypoints[currentWaypoint].transform.position
@@ -150,7 +163,10 @@ public class WolfBehaviour : MonoBehaviour
         if(numofWaypoints > waypointtoStop)
         {
             anim.SetBool("isWalking", false);
-           // anim.SetBool("shouldWag", true);
+            // anim.SetBool("shouldWag", true);
+
+            walkSoundSource.Stop();
+
             StartCoroutine(StartReset());
         }
 

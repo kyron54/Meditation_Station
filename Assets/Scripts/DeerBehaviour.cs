@@ -26,6 +26,8 @@ public class DeerBehaviour : MonoBehaviour
     public int waypointtoStop;
 
     private Rigidbody rb;
+
+    public AudioSource walkingSoundSource;
    
     // Start is called before the first frame update
     void Start()
@@ -134,6 +136,9 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", true);
             anim.SetBool("isEating", false);
             anim.SetBool("isPet", false);
+
+            walkingSoundSource.Play();
+
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
             Vector3 lookAt = waypoints[currentWaypoint].transform.position
@@ -146,6 +151,8 @@ public class DeerBehaviour : MonoBehaviour
         if (numofWaypoints > waypointtoStop)
         {
             anim.SetBool("isWalking", false);
+
+            walkingSoundSource.Stop();
 
             StartCoroutine(StartReset());
         }

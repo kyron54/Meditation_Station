@@ -70,7 +70,7 @@ public class LanternLight : MonoBehaviour
     {
         if (soundDecider == -1)
         {
-            soundDecider = Random.Range(0, sounds.Length);
+            soundDecider = Random.Range(0, sounds.Length - 1);
         }
 
         soundSource.clip = sounds[soundDecider];
