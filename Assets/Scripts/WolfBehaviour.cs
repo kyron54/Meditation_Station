@@ -23,18 +23,20 @@ public class WolfBehaviour : MonoBehaviour
     private Animator anim;
     public int waypointtoStop;
 
-    private AudioSource walkSoundSource;
-    private AudioSource sniffSoundSource;
+    public AudioSource walkSoundSource;
+    public AudioSource sniffSoundSource;
     
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
 
-        walkSoundSource = gameObject.transform.GetChild(5).
-            GetComponent<AudioSource>();
-        sniffSoundSource = gameObject.transform.GetChild(6).
-            GetComponent<AudioSource>();
+        //walkSoundSource = gameObject.transform.GetChild(5).
+        //GetComponent<AudioSource>();
+        //sniffSoundSource = gameObject.transform.GetChild(6).
+        // GetComponent<AudioSource>();
+
+        //walkSoundSource = GetComponentInChildren<AudioSource>();
     }
 
     // Update is called once per frame
