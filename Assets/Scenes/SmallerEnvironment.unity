@@ -5448,7 +5448,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Time Remaining Text
 --- !u!222 &224361682
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -58563,7 +58563,7 @@ RectTransform:
   m_GameObject: {fileID: 1595961147}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.05, z: 0.05}
+  m_LocalScale: {x: 0.15, y: 0.08, z: 0.05}
   m_Children: []
   m_Father: {fileID: 1050924558}
   m_RootOrder: 3
@@ -67261,7 +67261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5394546413186964292, guid: fba9d73319ab0c64aa46865f422701f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.39
+      value: 4.412
       objectReference: {fileID: 0}
     - target: {fileID: 5394546413186964292, guid: fba9d73319ab0c64aa46865f422701f2, type: 3}
       propertyPath: m_LocalPosition.z

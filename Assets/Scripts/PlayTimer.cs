@@ -57,7 +57,7 @@ public class PlayTimer : MonoBehaviour
     {
         if(timeValue <= 0)
         {
-
+            StartCoroutine(EndTransition(10));
         }
     }
 

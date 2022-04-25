@@ -36,6 +36,7 @@ public class BasicMovement : MonoBehaviour
         ControllerRotateCamera();
         MouseRotateCamera();
         MovePlayer();
+        MoveSpeedChange();
         //playFootsteps();
 
     }
@@ -126,6 +127,18 @@ public class BasicMovement : MonoBehaviour
         else
         {
             normalStep.Pause();
+        }
+    }
+
+    void MoveSpeedChange()
+    {
+        if(Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            moveSpeed += 1;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            moveSpeed -= 1;
         }
     }
 }
