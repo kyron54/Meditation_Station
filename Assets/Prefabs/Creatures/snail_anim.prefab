@@ -456,6 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5394546413186964292}
   - component: {fileID: -2050784406465612893}
+  - component: {fileID: 8973065642997703484}
   m_Layer: 7
   m_Name: snail_anim
   m_TagString: Untagged
@@ -500,6 +501,27 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8973065642997703484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4726131765711569406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adf57bca9abec491a8588b58e9e2b8ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  waypointRadius: 0.33
+  speed: 0.64
+  rotationSpeed: 1
+  degreesPerSecond: 1
 --- !u!1 &5136371030338123321
 GameObject:
   m_ObjectHideFlags: 0
