@@ -12,7 +12,7 @@ public class PlayTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        seconds = 90;
+        //seconds = 90;
         timeValue = seconds;
     }
 
@@ -41,7 +41,7 @@ public class PlayTimer : MonoBehaviour
         float minutes = Mathf.FloorToInt(timeToDisplay / 60);
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
 
-        timeText.text = string.Format("Time Remaining: {0:00}:{1:00}", minutes, seconds);
+        timeText.text = string.Format("Time Remaining in Experience: {0:00}:{1:00}", minutes, seconds);
 
         if(timeValue <= 60)
         {
@@ -55,6 +55,14 @@ public class PlayTimer : MonoBehaviour
 
     void ActivateEndTransition()
     {
+        if(timeValue <= 0)
+        {
 
+        }
+    }
+
+    IEnumerator EndTransition(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
     }
 }
