@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eatingSoundSource: {fileID: 5581889393549700705}
-  resetTime: 4
+  resetTime: 3
 --- !u!1 &2228074461098081485
 GameObject:
   m_ObjectHideFlags: 0
