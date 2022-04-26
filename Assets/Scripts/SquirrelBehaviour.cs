@@ -28,7 +28,7 @@ public class SquirrelBehaviour : MonoBehaviour
     void Update()
     {
         if(numofWaypoints <= 4 && Vector3.Distance(transform.position,
-            player.transform.position) <= 10.0f)
+            player.transform.position) <= 15.0f)
         {
             Movement();
             
