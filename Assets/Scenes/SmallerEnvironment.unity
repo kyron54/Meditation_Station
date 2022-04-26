@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 287796506}
-  m_IndirectSpecularColor: {r: 0.10412866, g: 0.26567686, b: 0.6264662, a: 1}
+  m_IndirectSpecularColor: {r: 0.10412854, g: 0.26567668, b: 0.6264656, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -55025,6 +55025,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 164272875754119969, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: MinDistance
+      value: 0.27656555
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351509539183644246, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2351509539183644246, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8136428993101777635, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: MinDistance
+      value: 0.57486725
+      objectReference: {fileID: 0}
     - target: {fileID: 8231595321226628553, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -55096,6 +55112,14 @@ PrefabInstance:
     - target: {fileID: 8752553428691670899, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
       propertyPath: m_Name
       value: Deer_final_animated_guided
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986549537401048169, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 8986549537401048169, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}

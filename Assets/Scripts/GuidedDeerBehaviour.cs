@@ -30,10 +30,16 @@ public class GuidedDeerBehaviour : MonoBehaviour
     public float waypointRadius;
 
     public float Speed = 3;
+
+    private AudioSource walkingSoundSource;
+
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        walkingSoundSource = gameObject.transform.Find("Walking Sound Player").
+            GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,6 +56,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
         {
             shouldMove = false;
             anim.SetBool("isWalking", false);
+
+            walkingSoundSource.Stop();
         }
 
         if(arrived == true && Vector3.Distance(transform.position,
@@ -62,6 +70,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
            player.transform.position) < 3.0f)
         {
             anim.SetBool("isWalking", false);
+
+            walkingSoundSource.Stop();
         }
 
         GuidedMovement();
@@ -75,6 +85,9 @@ public class GuidedDeerBehaviour : MonoBehaviour
                 guidedWaypoints[currentWaypoint1].transform.position, Time.deltaTime
                 * guidedSpeed);
             anim.SetBool("isWalking", true);
+
+            walkingSoundSource.Play();
+
             Vector3 lookAt = guidedWaypoints[currentWaypoint1].transform.position
                 - this.transform.position;
 
@@ -113,6 +126,9 @@ public class GuidedDeerBehaviour : MonoBehaviour
                 anim.SetBool("isWalking", true);
                 anim.SetBool("isEating", false);
                 anim.SetBool("isPet", false);
+
+                walkingSoundSource.Play();
+
                 rotSpeed = Speed * Random.Range(1f, 1.1f);
 
                 Vector3 lookAt = waypoints[currentWaypoint].transform.position
@@ -125,6 +141,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
             if (numofWaypoints > waypointtoStop)
             {
                 anim.SetBool("isWalking", false);
+
+                walkingSoundSource.Stop();
 
                 StartCoroutine(StartReset());
             }
@@ -168,7 +186,9 @@ public class GuidedDeerBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
-           // anim.SetBool("isEating", false);
+            // anim.SetBool("isEating", false);
+
+            walkingSoundSource.Stop();
         }
 
         if (other.gameObject.name.Contains("Pink Fruit"))
@@ -197,6 +217,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
         {
            // anim.SetBool("isEating", false);
             anim.SetBool("isWalking", true);
+
+            walkingSoundSource.Play();
         }
     }
 }
