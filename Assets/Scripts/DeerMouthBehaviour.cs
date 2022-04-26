@@ -9,6 +9,8 @@ public class DeerMouthBehaviour : MonoBehaviour
 
     public AudioSource eatingSoundSource;
 
+
+    public GameObject foodCrumbs;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,10 @@ public class DeerMouthBehaviour : MonoBehaviour
             eatingSoundSource.Play();
 
             StartCoroutine(NotEatingorSniffing());
+
+            GameObject newExp = Instantiate(foodCrumbs, transform.position, transform.rotation);
+
+            Destroy(newExp, 2.0f);
         }
     }
 

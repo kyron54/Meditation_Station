@@ -6626,6 +6626,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetTime: 4
   eatingSoundSource: {fileID: 164272875754119969}
+  foodCrumbs: {fileID: 7511797301956492911, guid: 915faa6ab01ca4640ba1b54e4b4bc4b5, type: 3}
 --- !u!1 &8577596319443187877
 GameObject:
   m_ObjectHideFlags: 0
