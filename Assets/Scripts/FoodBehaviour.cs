@@ -6,7 +6,7 @@ public class FoodBehaviour : MonoBehaviour
 {
     private Rigidbody rb;
 
-   
+    public GameObject foodCrumbs;
     // Start is called before the first frame update
     void Start()
     {
@@ -71,6 +71,9 @@ public class FoodBehaviour : MonoBehaviour
 
             Destroy(gameObject);
 
+            GameObject newExp = Instantiate(foodCrumbs, transform.position, transform.rotation);
+
+            Destroy(newExp, 2.0f);
            // gameObject.GetComponent<EnableFoodGrabBehaviour>().DestroyThis();
 
             
