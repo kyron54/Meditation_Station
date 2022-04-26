@@ -6,6 +6,9 @@ public class DeerMouthBehaviour : MonoBehaviour
 {
     private Animator anim;
     public float resetTime = 3.0f;
+
+    public AudioSource eatingSoundSource;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,6 +27,9 @@ public class DeerMouthBehaviour : MonoBehaviour
         {
             anim.SetBool("isEating", true);
             anim.SetBool("isSniffing", false);
+
+            eatingSoundSource.Play();
+
             StartCoroutine(NotEatingorSniffing());
         }
     }

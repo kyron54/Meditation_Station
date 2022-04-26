@@ -6,7 +6,6 @@ public class HarpTrigger : MonoBehaviour
 {
 
     //AudioSource harp;
-    public int soundDecider = -1;
     private ParticleSystem notes;
     [SerializeField] private AudioClip[] sounds;
     [SerializeField] private AudioSource soundSource;
@@ -36,11 +35,6 @@ public class HarpTrigger : MonoBehaviour
 
     private void DecideSound()
     {
-        if (soundDecider == -1)
-        {
-            soundDecider = Random.Range(0, sounds.Length - 1);
-        }
-
         soundSource.clip = sounds[Random.Range(0, sounds.Length)];
     }
 }

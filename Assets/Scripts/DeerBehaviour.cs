@@ -27,7 +27,7 @@ public class DeerBehaviour : MonoBehaviour
 
     private Rigidbody rb;
 
-    public AudioSource walkingSoundSource;
+    private AudioSource walkingSoundSource;
    
     // Start is called before the first frame update
     void Start()
@@ -35,6 +35,9 @@ public class DeerBehaviour : MonoBehaviour
         anim = GetComponent<Animator>();
 
         rb = GetComponent<Rigidbody>();
+
+        walkingSoundSource = gameObject.transform.Find("Walking Sound Player").
+            GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -51,7 +54,8 @@ public class DeerBehaviour : MonoBehaviour
             < 3.0f)
         {
             anim.SetBool("isWalking", false);
-           
+
+            walkingSoundSource.Stop();
         }
 
       
@@ -63,7 +67,9 @@ public class DeerBehaviour : MonoBehaviour
         {
             anim.SetBool("isWalking", false);
             anim.SetBool("isPet", true);
-          //  anim.SetBool("isEating", false);
+            //  anim.SetBool("isEating", false);
+
+            walkingSoundSource.Stop();
         }
 
        /* if(other.gameObject.name.Contains("Pink Fruit"))

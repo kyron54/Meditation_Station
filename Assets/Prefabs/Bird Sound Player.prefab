@@ -146,3 +146,4 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4b8b3cb844493481f9b85a4f8b52bb33, type: 3}
   minDownTime: 30
   maxDownTime: 45
+  soundDecider: -1

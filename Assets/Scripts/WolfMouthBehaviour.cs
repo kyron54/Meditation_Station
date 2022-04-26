@@ -6,6 +6,8 @@ public class WolfMouthBehaviour : MonoBehaviour
 {
     private Animator anim;
 
+    public AudioSource eatingSoundSource;
+
     public float resetTime = 5.0f;
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,9 @@ public class WolfMouthBehaviour : MonoBehaviour
         {
             anim.SetBool("isEating", true);
             anim.SetBool("isSniffing", false);
+
+            eatingSoundSource.Play();
+
             StartCoroutine(NotEatingorSniffing());
         }
     }
