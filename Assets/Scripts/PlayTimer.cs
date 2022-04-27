@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayTimer : MonoBehaviour
 {
@@ -9,11 +10,19 @@ public class PlayTimer : MonoBehaviour
     public float seconds;
     public Text timeText;
 
+    GameObject transitionController;
+    private TransitionController transCon;
+
+    public Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         //seconds = 90;
         timeValue = seconds;
+
+        //transitionController = GameObject.FindGameObjectWithTag("Transition Controller");
+        //transCon = transitionController.GetComponent<TransitionController>();
     }
 
     // Update is called once per frame
@@ -29,6 +38,12 @@ public class PlayTimer : MonoBehaviour
         }
 
         DisplayTime(timeValue);
+
+        if (timeValue <= 0)
+        {
+            ActivateEndTransition();
+            StartCoroutine(EndTransition(1));
+        }
     }
 
     void DisplayTime(float timeToDisplay)
@@ -55,14 +70,15 @@ public class PlayTimer : MonoBehaviour
 
     void ActivateEndTransition()
     {
-        if(timeValue <= 0)
-        {
-            StartCoroutine(EndTransition(10));
-        }
+        anim.SetBool("isPressed", true);
     }
 
     IEnumerator EndTransition(float waitTime)
     {
+        print("does this shit work?");
+
         yield return new WaitForSeconds(waitTime);
+
+        SceneManager.LoadScene(0);
     }
 }

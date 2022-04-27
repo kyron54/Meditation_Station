@@ -19,7 +19,10 @@ public class MenuManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        switchScenes();
+        if(Input.GetKeyDown(KeyCode.J))
+        {
+            StartCoroutine(PlayStart());
+        }
     }
 
     void switchScenes()

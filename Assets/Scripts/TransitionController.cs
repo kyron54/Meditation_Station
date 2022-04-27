@@ -16,21 +16,22 @@ public class TransitionController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim.SetBool("isPressed", false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        PlayTransition();
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            //anim.SetTrigger("isTriggered");
+            PlayTransition();
+        }
     }
 
     //Purely for testing purposes.
-    void PlayTransition()
+    public void PlayTransition()
     {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            anim.SetTrigger("isTriggered");
-        }
+        anim.SetBool("isPressed", true);
     }
 }
