@@ -6,7 +6,7 @@ public class FoodBehaviour : MonoBehaviour
 {
     private Rigidbody rb;
 
-   
+    public GameObject foodCrumbs;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +31,15 @@ public class FoodBehaviour : MonoBehaviour
         yield return new WaitForSeconds(2);
 
         rb.constraints = RigidbodyConstraints.None;
+    }
+
+    IEnumerator SpawnFruitParticles()
+    {
+        yield return new WaitForSeconds(1);
+
+        GameObject newExp = Instantiate(foodCrumbs, transform.position, Quaternion.identity);
+
+        Destroy(newExp, 2.0f);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -71,10 +80,14 @@ public class FoodBehaviour : MonoBehaviour
 
             Destroy(gameObject);
 
-           
-           // gameObject.GetComponent<EnableFoodGrabBehaviour>().DestroyThis();
 
-            
+            GameObject newExp = Instantiate(foodCrumbs, transform.position, Quaternion.identity);
+
+            Destroy(newExp, 2.0f);
+           // StartCoroutine(SpawnFruitParticles());
+            // gameObject.GetComponent<EnableFoodGrabBehaviour>().DestroyThis();
+
+
         }
     }
 

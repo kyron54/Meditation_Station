@@ -10,7 +10,7 @@ public class WolfMouthBehaviour : MonoBehaviour
 
     public float resetTime = 5.0f;
 
-    public GameObject foodCrumbs;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +34,7 @@ public class WolfMouthBehaviour : MonoBehaviour
 
             StartCoroutine(NotEatingorSniffing());
 
-            GameObject newExp = Instantiate(foodCrumbs, transform.position, transform.rotation);
-
-            Destroy(newExp, 2.0f);
+           
         }
     }
 
