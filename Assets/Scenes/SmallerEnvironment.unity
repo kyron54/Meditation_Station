@@ -5652,7 +5652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ab6c38e3060fd45835a0b278119804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 240
+  seconds: 10
   timeText: {fileID: 224361681}
   anim: {fileID: 47965863}
 --- !u!114 &224361681
@@ -68987,17 +68987,17 @@ Canvas:
   m_GameObject: {fileID: 2030897484}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 1957323806}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 0.15
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -811570991
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1001 &2031005284
 PrefabInstance:

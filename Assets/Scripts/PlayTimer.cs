@@ -79,6 +79,6 @@ public class PlayTimer : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(3);
     }
 }
