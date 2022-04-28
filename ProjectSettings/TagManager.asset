@@ -8,6 +8,7 @@ TagManager:
   - Animal Mouth
   - Fruit
   - Transition Controller
+  - Transition
   layers:
   - Default
   - TransparentFX

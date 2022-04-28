@@ -263,11 +263,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4435745861783978392, guid: d009bc4b9d2494455bae4e8a7e326600, type: 3}
       propertyPath: m_Volume
-      value: 0.37
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 4435745861783978392, guid: d009bc4b9d2494455bae4e8a7e326600, type: 3}
       propertyPath: MinDistance
       value: 1.3546968
+      objectReference: {fileID: 0}
+    - target: {fileID: 4435745861783978392, guid: d009bc4b9d2494455bae4e8a7e326600, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8946876854222009932, guid: d009bc4b9d2494455bae4e8a7e326600, type: 3}
       propertyPath: m_RootOrder
@@ -1886,7 +1890,7 @@ GameObject:
   - component: {fileID: 47965863}
   m_Layer: 5
   m_Name: Fade
-  m_TagString: Untagged
+  m_TagString: Transition
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2243,6 +2247,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1856582341589348291, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: m_Volume
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856582341589348291, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2007968882049297667, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2314,6 +2326,10 @@ PrefabInstance:
     - target: {fileID: 5367801753177542453, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581889393549700705, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7074858748834214159, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4932,6 +4948,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4139974456782721257, guid: 5ed650842407dc14080ca828fcab865a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4678590943269549196, guid: 5ed650842407dc14080ca828fcab865a, type: 3}
       propertyPath: player
       value: 
@@ -5655,7 +5675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ab6c38e3060fd45835a0b278119804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 350
+  seconds: 240
   timeText: {fileID: 224361681}
   anim: {fileID: 47965863}
 --- !u!114 &224361681
@@ -7178,6 +7198,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 337963271580696600, guid: 5ed650842407dc14080ca828fcab865a, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4139974456782721257, guid: 5ed650842407dc14080ca828fcab865a, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4678590943269549196, guid: 5ed650842407dc14080ca828fcab865a, type: 3}
@@ -17573,6 +17597,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a4166e977f4ed245bd0c911be95c5d5, type: 3}
+--- !u!1 &561443072 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4000035424795633613, guid: 0a4166e977f4ed245bd0c911be95c5d5, type: 3}
+  m_PrefabInstance: {fileID: 561443071}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &561443073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561443072}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3456fc608bb66024eb25840bfdedd5f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playTimer: {fileID: 224361678}
 --- !u!1001 &568079965
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25817,6 +25859,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1856582341589348291, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: m_Volume
+      value: 0.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856582341589348291, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2007968882049297667, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -25884,6 +25934,10 @@ PrefabInstance:
     - target: {fileID: 5367801753177542453, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5581889393549700705, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7074858748834214159, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -49266,7 +49320,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300001, guid: 1dd706bb85d8aef4e83a6229dbd62c36, type: 2}
   m_audioClip: {fileID: 8300000, guid: 09019ac178d674e56aa34cfa889c7402, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -54947,6 +55001,10 @@ PrefabInstance:
     - target: {fileID: 164272875754119969, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
       propertyPath: MinDistance
       value: 0.27656555
+      objectReference: {fileID: 0}
+    - target: {fileID: 164272875754119969, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2351509539183644246, guid: add311b3d805f2c4f8358fca826f2d3d, type: 3}
       propertyPath: m_LocalPosition.y

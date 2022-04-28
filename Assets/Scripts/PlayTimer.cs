@@ -41,8 +41,7 @@ public class PlayTimer : MonoBehaviour
 
         if (timeValue <= 0)
         {
-            ActivateEndTransition();
-            StartCoroutine(EndTransition(1));
+            End();
         }
     }
 
@@ -71,6 +70,12 @@ public class PlayTimer : MonoBehaviour
     void ActivateEndTransition()
     {
         anim.SetBool("isPressed", true);
+    }
+
+    public void End()
+    {
+        ActivateEndTransition();
+        StartCoroutine(EndTransition(3));
     }
 
     IEnumerator EndTransition(float waitTime)

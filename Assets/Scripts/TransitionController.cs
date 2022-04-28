@@ -10,13 +10,14 @@ public class TransitionController : MonoBehaviour
 
     private void Awake()
     {
-        //DontDestroyOnLoad(gameObject);
+        DontDestroyOnLoad(gameObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
         anim.SetBool("isPressed", false);
+        anim.SetBool("isPressedLong", false);
     }
 
     // Update is called once per frame
@@ -33,5 +34,10 @@ public class TransitionController : MonoBehaviour
     public void PlayTransition()
     {
         anim.SetBool("isPressed", true);
+    }
+
+    public void PlayLongTransition()
+    {
+        anim.SetBool("isPressedLong", true);
     }
 }
