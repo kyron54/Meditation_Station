@@ -5647,7 +5647,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56ab6c38e3060fd45835a0b278119804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seconds: 10
+  seconds: 350
   timeText: {fileID: 224361681}
   anim: {fileID: 47965863}
 --- !u!114 &224361681
@@ -37416,6 +37416,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2214501713982570980, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1957323799}
+    - target: {fileID: 2214501713982570980, guid: 42e4dd09963bba74e81373c34999066d, type: 3}
       propertyPath: waypoints.Array.size
       value: 4
       objectReference: {fileID: 0}
@@ -44150,7 +44154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55.011665
+      value: 54.45
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalPosition.y
@@ -44158,7 +44162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 134.60167
+      value: 130.94
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalRotation.w
@@ -62511,7 +62515,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 132.98
+      value: 131.42
       objectReference: {fileID: 0}
     - target: {fileID: 8112842777173899229, guid: 05385608641b1a44b945f054dfeeb866, type: 3}
       propertyPath: m_LocalRotation.w
