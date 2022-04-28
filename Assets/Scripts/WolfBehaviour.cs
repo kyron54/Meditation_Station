@@ -25,6 +25,8 @@ public class WolfBehaviour : MonoBehaviour
 
     private AudioSource walkSoundSource;
     private AudioSource sniffSoundSource;
+
+    private bool shouldPlayWalkSound = true;
     
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,7 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("shouldWag", true);
 
             walkSoundSource.Stop();
+            shouldPlayWalkSound = true;
 
             /* Vector3 lookAt = player.transform.position
                  - this.transform.position;
@@ -93,6 +96,8 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("shouldWag", false);
 
             walkSoundSource.Stop();
+            shouldPlayWalkSound = true;
+
             sniffSoundSource.Play();
         }
 
@@ -153,7 +158,11 @@ public class WolfBehaviour : MonoBehaviour
             anim.SetBool("shouldWag", false);
             anim.SetBool("isPet", false);
 
-            walkSoundSource.Play();
+            if(shouldPlayWalkSound)
+            {
+                shouldPlayWalkSound = false;
+                walkSoundSource.Play();
+            }
 
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
@@ -170,6 +179,7 @@ public class WolfBehaviour : MonoBehaviour
             // anim.SetBool("shouldWag", true);
 
             walkSoundSource.Stop();
+            shouldPlayWalkSound = true;
 
             StartCoroutine(StartReset());
         }

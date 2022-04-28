@@ -3983,7 +3983,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 67159415fc9974f75a7d2ef7081a5e57, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.13
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6626,7 +6626,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetTime: 4
   eatingSoundSource: {fileID: 164272875754119969}
-  foodCrumbs: {fileID: 7511797301956492911, guid: 915faa6ab01ca4640ba1b54e4b4bc4b5, type: 3}
 --- !u!1 &8577596319443187877
 GameObject:
   m_ObjectHideFlags: 0

@@ -28,6 +28,8 @@ public class DeerBehaviour : MonoBehaviour
     private Rigidbody rb;
 
     private AudioSource walkingSoundSource;
+
+    private bool shouldPlayWalkingSound = true;
    
     // Start is called before the first frame update
     void Start()
@@ -56,6 +58,7 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
         }
 
       
@@ -70,6 +73,7 @@ public class DeerBehaviour : MonoBehaviour
             //  anim.SetBool("isEating", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
         }
 
        /* if(other.gameObject.name.Contains("Pink Fruit"))
@@ -143,7 +147,11 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isEating", false);
             anim.SetBool("isPet", false);
 
-            walkingSoundSource.Play();
+            if(shouldPlayWalkingSound)
+            {
+                shouldPlayWalkingSound = false;
+                walkingSoundSource.Play();
+            }
 
             rotSpeed = Speed * Random.Range(1f, 1.1f);
 
@@ -159,6 +167,7 @@ public class DeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
 
             StartCoroutine(StartReset());
         }

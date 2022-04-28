@@ -321,7 +321,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 67159415fc9974f75a7d2ef7081a5e57, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -365,7 +365,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -4670,7 +4670,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetTime: 3
   eatingSoundSource: {fileID: 4139974456782721257}
-  foodCrumbs: {fileID: 7511797301956492911, guid: 915faa6ab01ca4640ba1b54e4b4bc4b5, type: 3}
 --- !u!1 &4682317645806426899
 GameObject:
   m_ObjectHideFlags: 0
@@ -8698,7 +8697,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 3053467dbae8f497fb0deb68e7d77791, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.13
   m_Pitch: 1
   Loop: 0
   Mute: 0

@@ -33,6 +33,8 @@ public class GuidedDeerBehaviour : MonoBehaviour
 
     private AudioSource walkingSoundSource;
 
+    private bool shouldPlayWalkingSound = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,6 +60,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
         }
 
         if(arrived == true && Vector3.Distance(transform.position,
@@ -72,6 +75,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
             anim.SetBool("isWalking", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
         }
 
         GuidedMovement();
@@ -86,7 +90,11 @@ public class GuidedDeerBehaviour : MonoBehaviour
                 * guidedSpeed);
             anim.SetBool("isWalking", true);
 
-            walkingSoundSource.Play();
+            if(shouldPlayWalkingSound)
+            {
+                shouldPlayWalkingSound = false;
+                walkingSoundSource.Play();
+            }
 
             Vector3 lookAt = guidedWaypoints[currentWaypoint1].transform.position
                 - this.transform.position;
@@ -127,7 +135,11 @@ public class GuidedDeerBehaviour : MonoBehaviour
                 anim.SetBool("isEating", false);
                 anim.SetBool("isPet", false);
 
-                walkingSoundSource.Play();
+                if (shouldPlayWalkingSound)
+                {
+                    shouldPlayWalkingSound = false;
+                    walkingSoundSource.Play();
+                }
 
                 rotSpeed = Speed * Random.Range(1f, 1.1f);
 
@@ -189,6 +201,7 @@ public class GuidedDeerBehaviour : MonoBehaviour
             // anim.SetBool("isEating", false);
 
             walkingSoundSource.Stop();
+            shouldPlayWalkingSound = true;
         }
 
         if (other.gameObject.name.Contains("Pink Fruit"))
@@ -218,7 +231,11 @@ public class GuidedDeerBehaviour : MonoBehaviour
            // anim.SetBool("isEating", false);
             anim.SetBool("isWalking", true);
 
-            walkingSoundSource.Play();
+            if (shouldPlayWalkingSound)
+            {
+                shouldPlayWalkingSound = false;
+                walkingSoundSource.Play();
+            }
         }
     }
 }
