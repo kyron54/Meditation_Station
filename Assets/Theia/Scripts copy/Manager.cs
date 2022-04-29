@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.XR.ARFoundation;
 using System.Runtime.InteropServices;
 
 
@@ -20,7 +19,6 @@ public class Manager : MonoBehaviour
     public GameObject geneUiParent, geneUiPrefab, colorUiParent, colorUiPrefab, materialButtons, selectedMat;
     public Color[] colors;
     public Material[] mats;
-    public ARTrackedImageManager arImage;
 
     public GameObject allUI, editingUI, colorUI, screenshotUI, finishedUI, ARScene;
     public Sprite[] barSprites;
@@ -94,8 +92,6 @@ public class Manager : MonoBehaviour
 
         editingUI.SetActive(true);
 
-        arImage.enabled = false;
-
         SelectMat("0");
         //GameObject.FindObjectOfType<ARTrackedImageManager>().enabled = false;
     }
@@ -161,7 +157,6 @@ public class Manager : MonoBehaviour
         yield return new WaitForEndOfFrame();
         Texture2D screenshot = ScreenCapture.CaptureScreenshotAsTexture();
         screenshots.Add(screenshot);
-        NativeGallery.SaveImageToGallery(screenshot, "Theia", "plant", null);
         byte[] bytes = screenshot.EncodeToPNG();
         //UIPrintInteractionController(bytes);
         yield return new WaitForEndOfFrame();
