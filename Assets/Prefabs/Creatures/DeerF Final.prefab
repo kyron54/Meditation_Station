@@ -5395,6 +5395,7 @@ GameObject:
   - component: {fileID: 4678590943269549201}
   - component: {fileID: 4678590943269549195}
   - component: {fileID: 4678590943269549196}
+  - component: {fileID: 9038692946656073136}
   m_Layer: 7
   m_Name: DeerF Final
   m_TagString: Untagged
@@ -5482,6 +5483,25 @@ MonoBehaviour:
   numofWaypoints: 0
   resetTime: 10
   waypointtoStop: 0
+--- !u!205 &9038692946656073136
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5489000078632667589}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.061766297, y: 0.94692266, z: 0.07664442}
+  m_Size: 2.3788204
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.04652813
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 879924290740441788}
+  m_Enabled: 1
 --- !u!1 &5536528429757911411
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8184872365504419450}
   - component: {fileID: 8184872365504419452}
   - component: {fileID: 8184872365504419453}
+  - component: {fileID: 158651792302570644}
   m_Layer: 0
   m_Name: Pink Fruit
   m_TagString: Fruit
@@ -127,7 +128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dea35ecd7e34dc444b5d1be28562cce5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  foodCrumbs: {fileID: 7511797301956492911, guid: 915faa6ab01ca4640ba1b54e4b4bc4b5, type: 3}
 --- !u!114 &8184872365504419453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +146,26 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
   m_grabbedBy: {fileID: 0}
+--- !u!205 &158651792302570644
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9031946911896070959}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: -0.000059738755, z: 0}
+  m_Size: 0.064480126
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.007984525
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7374388945690282746}
+    - renderer: {fileID: 3127075685392746463}
+  m_Enabled: 1
 --- !u!1001 &7042138633218714951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -236,6 +256,11 @@ GameObject:
 --- !u!4 &3127075685392746449 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5395075968146008726, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
+  m_PrefabInstance: {fileID: 7042138633218714951}
+  m_PrefabAsset: {fileID: 0}
+--- !u!199 &3127075685392746463 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 5395075968146008728, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
   m_PrefabInstance: {fileID: 7042138633218714951}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &1697984755241282931

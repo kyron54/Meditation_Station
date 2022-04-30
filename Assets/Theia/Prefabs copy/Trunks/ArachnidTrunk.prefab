@@ -129,6 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2908965429982923340}
+  - component: {fileID: 3622075220991341584}
   m_Layer: 0
   m_Name: ArachnidTrunk
   m_TagString: Untagged
@@ -160,6 +161,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &3622075220991341584
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528041157807984886}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.0043079485, y: 0.039325386, z: -0.002701914}
+  m_Size: 0.08609785
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.14638537
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 780783688240892735}
+  m_Enabled: 1
 --- !u!1 &2679123042244412600
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,5 +406,10 @@ PrefabInstance:
 --- !u!4 &1918193125702725712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 76958f0184b53420482a8419769ffa9a, type: 3}
+  m_PrefabInstance: {fileID: 2095426176421337019}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &780783688240892735 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 76958f0184b53420482a8419769ffa9a, type: 3}
   m_PrefabInstance: {fileID: 2095426176421337019}
   m_PrefabAsset: {fileID: 0}

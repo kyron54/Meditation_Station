@@ -130,7 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a774bc33f264684983c3fa8f647cf37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundDecider: -1
   sounds:
   - {fileID: 8300000, guid: e9b84535d6d504f81b9e8b7bedacdfc5, type: 3}
   - {fileID: 8300000, guid: 30acb9a82f70c430481320105db40d1f, type: 3}
@@ -248,7 +247,7 @@ ParticleSystem:
   ringBufferLoopRange: {x: 0, y: 1}
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   useRigidbodyForVelocity: 1
@@ -5057,7 +5056,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: playOnAwake
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5395075968146008727, guid: 8ead2d0c8833dc84d8869ecbb3de8f38, type: 3}
       propertyPath: ShapeModule.radius.value

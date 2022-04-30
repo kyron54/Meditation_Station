@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4379882319712090668}
   - component: {fileID: 4379882319712090669}
   - component: {fileID: 4379882319712090658}
+  - component: {fileID: 1217080032148106377}
   m_Layer: 0
   m_Name: spores
   m_TagString: Untagged
@@ -4862,3 +4863,22 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!205 &1217080032148106377
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4379882319712090659}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.5134306, y: 1.2997537, z: -0.03768611}
+  m_Size: 8.180639
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.19958512
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4379882319712090658}
+  m_Enabled: 1

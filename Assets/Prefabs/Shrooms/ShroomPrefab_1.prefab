@@ -53,10 +53,12 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 5242778104420381905}
+    - renderer: {fileID: 5033329442602023827}
   - screenRelativeHeight: 0.027162239
     fadeTransitionWidth: 0
     renderers:
     - renderer: {fileID: 2167980501435759428}
+    - renderer: {fileID: 5033329442602023827}
   m_Enabled: 1
 --- !u!1 &2629493110857841175
 GameObject:
@@ -466,6 +468,11 @@ GameObject:
 --- !u!4 &5033329442602023837 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4379882319712090668, guid: f65510b238c508d4c9243512fdf094cc, type: 3}
+  m_PrefabInstance: {fileID: 8723909768025801137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!199 &5033329442602023827 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 4379882319712090658, guid: f65510b238c508d4c9243512fdf094cc, type: 3}
   m_PrefabInstance: {fileID: 8723909768025801137}
   m_PrefabAsset: {fileID: 0}
 --- !u!65 &8287536081719470657

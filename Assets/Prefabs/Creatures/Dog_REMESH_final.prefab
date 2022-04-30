@@ -514,6 +514,7 @@ GameObject:
   - component: {fileID: 2214501713982570983}
   - component: {fileID: 2214501713982570981}
   - component: {fileID: 2214501713982570980}
+  - component: {fileID: 2421306953055308000}
   m_Layer: 7
   m_Name: Dog_REMESH_final
   m_TagString: Untagged
@@ -603,6 +604,25 @@ MonoBehaviour:
   numofWaypoints: 0
   resetTime: 10
   waypointtoStop: 0
+--- !u!205 &2421306953055308000
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331398916031249587}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0031698346, y: 0.5403178, z: -0.20724416}
+  m_Size: 2.1634269
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.04550053
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5313866063788663777}
+  m_Enabled: 1
 --- !u!1 &1468033920144523831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1269,7 +1289,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8268024609827358106, guid: 7dc500eacc51f9c429f8bf8e92d9634e, type: 3}
+  - {fileID: 2100000, guid: 30a8d00cbeb8cc849964500ad9010300, type: 2}
   - {fileID: -8725624188449797229, guid: 7dc500eacc51f9c429f8bf8e92d9634e, type: 3}
   - {fileID: -749338713933554755, guid: 7dc500eacc51f9c429f8bf8e92d9634e, type: 3}
   m_StaticBatchInfo:

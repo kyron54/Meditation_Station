@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2119356926130696248}
   - component: {fileID: 5965535630734925306}
+  - component: {fileID: -7016000627582126913}
   m_Layer: 0
   m_Name: Berry
   m_TagString: Untagged
@@ -46,6 +47,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.00001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &-7016000627582126913
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270727625892869947}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0004838705, y: 0, z: 0}
+  m_Size: 0.9667665
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.02892408
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 4516539192768413647}
+    - renderer: {fileID: 661452712636613672}
+  m_Enabled: 1
 --- !u!1001 &2228268190495807660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,6 +161,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1a6ea13fa1c1946eda86d00cc47e4bd5, type: 3}
   m_PrefabInstance: {fileID: 2228268190495807660}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &661452712636613672 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 1a6ea13fa1c1946eda86d00cc47e4bd5, type: 3}
+  m_PrefabInstance: {fileID: 2228268190495807660}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5743502463358974794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -200,5 +226,10 @@ PrefabInstance:
 --- !u!4 &4563113565137501899 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8135306957304022401, guid: 1b8d71644c0b34f02b272d37892c18f0, type: 3}
+  m_PrefabInstance: {fileID: 5743502463358974794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!199 &4516539192768413647 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 8149542217699067013, guid: 1b8d71644c0b34f02b272d37892c18f0, type: 3}
   m_PrefabInstance: {fileID: 5743502463358974794}
   m_PrefabAsset: {fileID: 0}

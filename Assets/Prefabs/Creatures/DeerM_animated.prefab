@@ -3398,6 +3398,7 @@ GameObject:
   - component: {fileID: 3578779212156150623}
   - component: {fileID: 3578779212156150620}
   - component: {fileID: 3578779212156150621}
+  - component: {fileID: 2545845187225539602}
   m_Layer: 7
   m_Name: DeerM_animated
   m_TagString: Untagged
@@ -3483,6 +3484,25 @@ MonoBehaviour:
   numofWaypoints: 0
   resetTime: 10
   waypointtoStop: 0
+--- !u!205 &2545845187225539602
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4425641413763164181}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.00000023841858, y: 1.7264173, z: 0.07101834}
+  m_Size: 3.7369123
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.044484157
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 2098285324161838945}
+  m_Enabled: 1
 --- !u!1 &4444290352744845985
 GameObject:
   m_ObjectHideFlags: 0

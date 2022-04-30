@@ -3840,6 +3840,7 @@ GameObject:
   - component: {fileID: 7319536349554078199}
   - component: {fileID: 7319536349554078196}
   - component: {fileID: 7319536349554078197}
+  - component: {fileID: -3431597558082387113}
   m_Layer: 7
   m_Name: Dog_w-o_bulgingEyes
   m_TagString: Untagged
@@ -3925,6 +3926,27 @@ MonoBehaviour:
   numofWaypoints: 0
   resetTime: 10
   waypointtoStop: 0
+--- !u!205 &-3431597558082387113
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590076472203136185}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0038249195, y: 0.5461432, z: -0.23110318}
+  m_Size: 2.1437154
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.15373597
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5379448862746583265}
+    - renderer: {fileID: 7381807960477321273}
+    - renderer: {fileID: 3800197481197996231}
+  m_Enabled: 1
 --- !u!1 &7642059529589197135
 GameObject:
   m_ObjectHideFlags: 0

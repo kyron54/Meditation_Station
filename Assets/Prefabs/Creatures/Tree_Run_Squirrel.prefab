@@ -3922,6 +3922,7 @@ GameObject:
   - component: {fileID: 7245226899166389008}
   - component: {fileID: 7135546820813898225}
   - component: {fileID: 7135546820813898227}
+  - component: {fileID: 8128582202578943208}
   m_Layer: 7
   m_Name: Tree_Run_Squirrel
   m_TagString: Untagged
@@ -3989,6 +3990,26 @@ MonoBehaviour:
   Speed: 4
   rotSpeed: 0
   player: {fileID: 0}
+--- !u!205 &8128582202578943208
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8054661368161941930}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.00828746, y: 0.1774036, z: -0.11343962}
+  m_Size: 0.73934877
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.03957074
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 406956714884185172}
+    - renderer: {fileID: 7882607185653776096}
+  m_Enabled: 1
 --- !u!1 &8056288594885817602
 GameObject:
   m_ObjectHideFlags: 0

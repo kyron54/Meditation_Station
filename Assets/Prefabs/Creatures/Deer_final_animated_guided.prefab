@@ -6794,6 +6794,7 @@ GameObject:
   - component: {fileID: 8482029798850718246}
   - component: {fileID: 8482029798850718247}
   - component: {fileID: 8482029798850718248}
+  - component: {fileID: 7496706569586607420}
   m_Layer: 7
   m_Name: Deer_final_animated_guided
   m_TagString: Untagged
@@ -6887,6 +6888,25 @@ MonoBehaviour:
   waypointtoStop: 0
   waypointRadius: 1
   Speed: 1
+--- !u!205 &7496706569586607420
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8752553428691670899}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.00000017881393, y: 1.7633579, z: 0.10525429}
+  m_Size: 3.7227979
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.05075086
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 6413903155381391367}
+  m_Enabled: 1
 --- !u!1 &8754180625384266715
 GameObject:
   m_ObjectHideFlags: 0

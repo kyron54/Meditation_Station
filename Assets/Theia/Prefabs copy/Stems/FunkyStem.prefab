@@ -69,6 +69,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2908965429982923340}
+  - component: {fileID: 7076727044025375618}
   m_Layer: 0
   m_Name: FunkyStem
   m_TagString: Untagged
@@ -97,6 +98,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!205 &7076727044025375618
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2528041157807984886}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.0016927943, y: 0.03510329, z: -0.0060158316}
+  m_Size: 0.074035466
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.010182454
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 5125986375683878179}
+    - renderer: {fileID: 4254619211185217775}
+    - renderer: {fileID: 5352329817696586119}
+  m_Enabled: 1
 --- !u!1 &5588509842125425245
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,5 +323,20 @@ PrefabInstance:
 --- !u!4 &726067529800545911 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 805499f43f152f34792da05c472c60d9, type: 3}
+  m_PrefabInstance: {fileID: 979880292452503964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5125986375683878179 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -3838735271085949761, guid: 805499f43f152f34792da05c472c60d9, type: 3}
+  m_PrefabInstance: {fileID: 979880292452503964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &4254619211185217775 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3932287124643443059, guid: 805499f43f152f34792da05c472c60d9, type: 3}
+  m_PrefabInstance: {fileID: 979880292452503964}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5352329817696586119 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4044671773113788389, guid: 805499f43f152f34792da05c472c60d9, type: 3}
   m_PrefabInstance: {fileID: 979880292452503964}
   m_PrefabAsset: {fileID: 0}

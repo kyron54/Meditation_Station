@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2119356926130696248}
   - component: {fileID: 914823251115551524}
   - component: {fileID: 5965535630734925306}
+  - component: {fileID: -3214342040198320559}
   m_Layer: 0
   m_Name: Crystal
   m_TagString: Untagged
@@ -54,6 +55,26 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!205 &-3214342040198320559
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3270727625892869947}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: -0.00011110306, y: -0.2034241, z: 1.0897377}
+  m_Size: 3.5566025
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.035842165
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 8275496162407328075}
+    - renderer: {fileID: 8001250094372685075}
+  m_Enabled: 1
 --- !u!1001 &2568007910447933890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -150,5 +171,15 @@ PrefabInstance:
 --- !u!4 &1520376156649428494 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3943485974062071756, guid: 0a661dd39d968475a8b8524503690640, type: 3}
+  m_PrefabInstance: {fileID: 2568007910447933890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8275496162407328075 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 5871306866193186953, guid: 0a661dd39d968475a8b8524503690640, type: 3}
+  m_PrefabInstance: {fileID: 2568007910447933890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!199 &8001250094372685075 stripped
+ParticleSystemRenderer:
+  m_CorrespondingSourceObject: {fileID: 5524020116104244433, guid: 0a661dd39d968475a8b8524503690640, type: 3}
   m_PrefabInstance: {fileID: 2568007910447933890}
   m_PrefabAsset: {fileID: 0}

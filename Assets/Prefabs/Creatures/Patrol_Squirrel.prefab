@@ -478,6 +478,7 @@ GameObject:
   - component: {fileID: 284706898299464746}
   - component: {fileID: 284706898299464744}
   - component: {fileID: 284706898299464747}
+  - component: {fileID: 5717618537580666640}
   m_Layer: 7
   m_Name: Patrol_Squirrel
   m_TagString: Untagged
@@ -559,6 +560,26 @@ MonoBehaviour:
   Speed: 3
   rotSpeed: 0
   resetTime: 5
+--- !u!205 &5717618537580666640
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094958256024129919}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0.00828746, y: 0.1774036, z: -0.11343962}
+  m_Size: 0.73934877
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.036757465
+    fadeTransitionWidth: 0
+    renderers:
+    - renderer: {fileID: 7300398306348766337}
+    - renderer: {fileID: 977650649296279093}
+  m_Enabled: 1
 --- !u!1 &1096726179472907735
 GameObject:
   m_ObjectHideFlags: 0
