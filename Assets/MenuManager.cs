@@ -9,6 +9,7 @@ public class MenuManager : MonoBehaviour
     public Animator anim;
     private AudioSource start;
     public Button startButton;
+    public Button credits;
 
     // Start is called before the first frame update
     void Start()
@@ -25,9 +26,9 @@ public class MenuManager : MonoBehaviour
         }
     }
 
-    void switchScenes()
+    public void switchCredits()
     {
-
+        SceneManager.LoadScene(4);
     }
 
     public void MeditationStart()
@@ -45,6 +46,7 @@ public class MenuManager : MonoBehaviour
         anim.SetBool("Fade", true);
         start.Play();
         startButton.interactable = false;
+        credits.interactable = false;
 
         yield return new WaitForSeconds(10);
 
