@@ -79,7 +79,7 @@ public class BasicMovement : MonoBehaviour
         transform.eulerAngles = new Vector3(pitch, yaw, 0f);
     }*/
 
-    void MovePlayer()
+    public void MovePlayer()
     {
         moveX = Input.GetAxis("Horizontal");
         moveZ = Input.GetAxis("Vertical");
